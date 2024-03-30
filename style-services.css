@@ -465,7 +465,7 @@ nav ul li a.active {
 }
 
 #itemCarrousel-1{
-    background: url(assets/img/carrusel4.jpg);
+    background: url(assets/img/carrusel4.webp);
     background-size: 40rem auto;
     background-repeat: no-repeat;
     background-color: rgb(226, 50, 50);
@@ -473,13 +473,13 @@ nav ul li a.active {
 }
 
 #itemCarrousel-2{
-    background: url(assets/img/carrusel2.jpg);
+    background: url(assets/img/carrusel2.webp);
     background-size: 40rem auto;
     background-repeat: no-repeat;
 }
 
 #itemCarrousel-3{
-    background: url(assets/img/carrusel3.jpg);
+    background: url(assets/img/carrusel3.webp);
     background-size: 40rem auto;
     background-repeat: no-repeat;
     background-position-y: -250px;
