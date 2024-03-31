@@ -754,6 +754,7 @@ nav ul li a.active {
         left: -100%;
         text-align: center;
         transition: all .5s;
+        z-index: 99;
     }
 
     nav ul li {
