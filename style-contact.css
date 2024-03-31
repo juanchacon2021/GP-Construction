@@ -118,8 +118,8 @@ nav ul li a.active {
         transform: translateX(0);
     }
     70% {
-        -webkit-transform: translateX(calc(-800px * 5));
-        transform: translateX(calc(-800px * 5));
+        -webkit-transform: translateX(calc(-800px * 2));
+        transform: translateX(calc(-800px * 2));
     }
 }
 
