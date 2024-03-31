@@ -538,6 +538,92 @@ nav ul li a.active {
 
 
 @media (max-width: 1393px) {
+    #itemCarrousel-1{
+        background: url(assets/img/carrusel4.webp);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-color: rgb(226, 50, 50);
+        object-fit: cover;
+    }
+    
+    #itemCarrousel-2{
+        background: url(assets/img/carrusel2.webp);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    
+    #itemCarrousel-3{
+        background: url(assets/img/carrusel3.webp);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position-y: -250px;
+    }
+
+
+
+
+    .services-cards {
+        width: 100%;
+        font-family: 'Roboto Slab';
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .services-text {
+        font-family: 'Roboto Slab';
+        text-align: center;
+        padding-bottom: 60px;
+    }
+
+    .services-text h1 {
+        font-size: 55px;
+    }
+
+    .services-text p {
+        font-size: 18px;
+        padding-top: 20px;
+    }
+
+    .card {
+        width: 260px;
+        height: 420px;
+        box-shadow: 2px 0px 20px 0px rgba(0, 0, 0, 0.199);
+        margin: 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card:hover {
+        transition: .3s;
+        transform: scale(1.03);
+    }
+
+    .card img{
+        width: 260px;
+        height: 300px;
+        object-fit: cover;
+    } 
+
+    .card h1 {
+        font-size: 14px;
+        padding-top: 20px;
+    }
+
+    .card p {
+        font-size: 12px;
+        padding: 20px;
+        text-align: justify;
+    }
+}
+
+
+@media (max-width: 690px) {
             /*      NAV     */
             nav {
                 background-color: #436980;
@@ -924,7 +1010,6 @@ nav ul li a.active {
 
     .additional-img {
         width: 100%;
-        background-color: #e49502;
     }
     /*  CARRUSEL    */
 

@@ -53,7 +53,7 @@ nav ul li a {
     font-size: 13px;
     padding: 12px 30px;
     border-radius: 3px;
-    font-family: 'Devant';
+    font-family: 'Roboto Slab';
     text-decoration: none;
 }
 
@@ -132,7 +132,7 @@ nav ul li a.active {
     position: relative;
     top: -350px;
     text-align: center;
-    font-family: 'Devant';
+    font-family: 'Roboto Slab';
     color: white;
     overflow: hidden;
 }
@@ -259,7 +259,7 @@ nav ul li a.active {
 
 .img-text {
     width: 100%;
-    font-family: 'Devant';
+    font-family: 'Roboto Slab';
     padding: 70px 100px 0px 50px;
     text-align: center;
 }
@@ -298,7 +298,7 @@ nav ul li a.active {
 
 .call {
     width: 100%;
-    font-family: 'Devant';
+    font-family: 'Roboto Slab';
     padding: 10em 0em 10em 3.5em;
     display: flex;
 }
@@ -405,7 +405,7 @@ nav ul li a.active {
 /* TEXTO POR ENCIMA DEL VIDEO*/
 
 .work-text {
-    font-family: 'Devant';
+    font-family: 'Roboto Slab';
     text-align: center;
     position: relative;
     top: -400px;
@@ -427,7 +427,7 @@ nav ul li a.active {
 .work-cards {
     width: 100%;
     display: flex;
-    font-family: 'Devant';
+    font-family: 'Roboto Slab';
     text-align: center;
     justify-content: space-between;
     height: 130px;
@@ -477,7 +477,7 @@ nav ul li a.active {
 .jobs {
     width: 100%;
     padding-bottom: 50px;
-    font-family: 'Devant';
+    font-family: 'Roboto Slab';
     text-align: center;
 }
 
@@ -565,7 +565,7 @@ nav ul li a.active {
     align-items: center;
     transform: scale(0);
     transition: transform .3s ease-in-out;
-    font-family: 'Devant';
+    font-family: 'Roboto Slab';
 }
 
 .light-box img {
@@ -610,7 +610,7 @@ nav ul li a.active {
 
 .textfinal {
     padding: 50px 100px;
-    font-family: 'Devant';
+    font-family: 'Roboto Slab';
 }
 
 .textfinal h1 {
@@ -635,7 +635,7 @@ nav ul li a.active {
 }
 
 .parte1 p {
-    font-family: 'Devant';
+    font-family: 'Roboto Slab';
     padding: 20px 0px;
     font-weight: 700;
     color: #00111b;
@@ -672,7 +672,7 @@ nav ul li a.active {
 
 .parte2 {
     display: flex;
-    font-family: 'Devant';
+    font-family: 'Roboto Slab';
     width: 40%;
     padding: 50px 0px;
 }
@@ -692,7 +692,7 @@ nav ul li a.active {
 
 .copy {
     background-color: #436980;
-    font-family: 'Devant';
+    font-family: 'Roboto Slab';
     text-align: center;
     padding: 30px 0px;
     color: white;
@@ -707,7 +707,7 @@ nav ul li a.active {
 .about-text {
     width: 100%;
     padding: 0px 40px;
-    font-family: 'Devant';
+    font-family: 'Roboto Slab';
 }
 
 .about-parrafo {
@@ -715,14 +715,388 @@ nav ul li a.active {
 }
 
 .card h1 {
-    font-family: 'Devant';
+    font-family: 'Roboto Slab';
 }
 
 
 
 /*  RESPONSIVE  */
 
-@media (max-width: 1393px){
+@media (max-width: 870px) {
+    .jobs {
+        width: 100%;
+        padding-top: 20em;
+        padding-bottom: 50px;
+        font-family: 'Roboto Slab';
+        text-align: center;
+    }
+
+    
+    /*      NAV     */
+    nav {
+        background-color: #436980;
+        height: 300px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .enlace{
+        padding: 130px 10px;
+    }
+
+    .logo {
+        height: 40px;
+        position: relative;
+        top: -110px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: absolute;
+        width: 100%;
+        height: 60vh;
+        background: #032c46;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 99;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    li a:hover, li a.active {
+        background: none;
+        color: white;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+        /*  START CARRUSEL   */
+
+        .slider {
+            width: 100%;
+            height: auto;
+        }
+        
+        .slide-track {
+            display: flex;
+            animation: scroll 40s linear infinite;
+            width: calc(800px * 10);
+            -webkit-animation: scroll 40s linear infinite;
+        }
+        
+        .slider .slide {
+            width: 100%;
+        }
+        
+        .slide img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        @keyframes scroll {
+            0% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+            70% {
+                -webkit-transform: translateX(calc(-800px * 2));
+                transform: translateX(calc(-800px * 2));
+            }
+        }
+        
+        .start-text {
+            position: relative;
+            top: -190px;
+            text-align: center;
+            font-family: 'Roboto Condensed';
+            color: white;
+            overflow: hidden;
+        }
+        
+        .start-text #text1  {
+            font-size: 15px;
+        }
+        
+        .start-text #text2  {
+            font-size: 30px;
+            padding: 25px 0px;
+        }
+        
+        .start-text #text3  {
+            font-size: 12px;
+        }
+
+    /*  IMAGE SECTION   */
+
+    .img-section {
+        display: block;
+    }
+    
+    .images {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0px 15px;
+        margin: 0px 0px;
+    }
+    
+    .images img {
+        width: 9em;
+        height: 7em;
+        object-fit: cover;
+        padding: 0px 0px;
+        margin: 10px 10px;
+    }
+    
+    .prueba {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35%;
+        top: 520px;
+    }
+    
+    .prueba1 img {
+        width: 8em;
+        height: 8em;
+        object-fit: cover;
+    }
+}
+
+
+@media (max-width: 1120px) {
+        /*      GO TOP      */
+
+        .go-top-container {
+            position: absolute;
+            bottom: 0rem;
+            right: 0rem;
+            width: 0rem;
+            height: 0rem;
+            z-index: 0;
+        }
+    
+        .go-top-button {
+            width: 0rem;
+            height: 0rem;
+            background: black;
+            border-radius: 0;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            transform: translate(0, 0);
+            z-index: -1;
+            transition: .2s;
+        }
+    
+        .go-top-button i {
+            position: absolute;
+            font-size: 0rem;
+            top: 0;
+            left: 0;
+            transform: translate(0, 0) scale(0);
+            color: white;
+            transition: .2s;
+        }
+    
+        .show {
+            z-index: 0;
+        }
+    
+        .show .go-top-button {
+            animation: popup .3s ease-in-out;
+            width: 0rem;
+            height: 0rem;
+            z-index: 11;
+        }
+    
+        .show i {
+            transform: translate(0, 0) scale(0);
+        }
+    
+        @keyframes popup {
+            0% {
+                width: 0rem;
+                height: 0rem;
+            }
+    
+            50% {
+                width: 0rem;
+                height: 0rem;
+            }
+            100% {
+                width: 0rem;
+                height: 0rem;
+            }
+        }
+
+        /*      CARDS DEL WORK      */
+
+    .work-cards {
+        width: 100%;
+        display: flex;
+        font-family: 'Roboto Slab';
+        text-align: center;
+        justify-content: space-between;
+        height: 130px;
+        flex-direction: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .work-card1 {
+        width: 250px;
+        height: 320px;
+        margin: 10px 20px;
+        box-shadow: 2px 0px 20px 0px rgba(0, 0, 0, 0.199);
+        position: relative;
+        top: -284px;
+    }
+
+    .work-card1:hover {
+        transition: .5s;
+        transform: scale(1);
+    }
+
+    .work-card1 img {
+        width: 250px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .work-card1 h1 {
+        font-size: 16px;
+    }
+
+    .work-card1 p {
+        width: 100%;
+        font-size: 12px;
+        padding: 10px 15px 20px 15px;
+    }
+}
+
+
+@media (max-width: 1393px) {
+
+        /*  IMAGE SECTION   */
+
+    .img-section {
+        display: block;
+    }
+    
+    .images {
+        display: flex;
+        justify-content: none;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0px 15px;
+        margin: 0px 0px;
+    }
+    
+    .images img {
+        width: 15em;
+        height: 13em;
+        object-fit: cover;
+        padding: 0px 0px;
+        margin: 10px 10px;
+    }
+    
+    .prueba {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35%;
+    }
+    
+    .prueba1 img {
+        width: 15em;
+        height: 15em;
+        object-fit: cover;
+    }
+    
+    
+    
+    
+    .img-text {
+        width: 100%;
+        font-family: 'Roboto Slab';
+        padding: 70px 30px 0px 30px;
+        text-align: center;
+    }
+    
+    .img-text h1 {
+        padding-bottom: 20px;
+        font-weight: 900;
+    }
+    
+    .img-text h5 {
+        padding-bottom: 20px;
+        font-weight: 900;
+        color: #436980;
+    }
+    
+    .img-text a {
+        color: white;
+        text-decoration: none;
+        background-color: #436980;
+        border-radius: 5px;
+        padding: 10px 10px;
+    }
+    
+    .img-text a:hover {
+        transition: .5s;
+        background-color: #022135;
+    }
+
+
+
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0px 150px 0px 150px;
+        margin: 70px 20px;
+        flex-direction: none;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        padding: 0px 0px 0px 0px;
+        box-shadow: 2px 0px 20px 0px rgba(0, 0, 0, 0.199);
+        width: 250px;
+        height: 180px;
+        margin: 0px 0px;
+    }
+}
+
+@media (max-width: 690px){
 
     /*      NAV     */
     nav {
@@ -874,6 +1248,7 @@ nav ul li a.active {
         justify-content: center;
         align-items: center;
         height: 35%;
+        top: 435px;
     }
     
     .prueba1 img {
@@ -966,12 +1341,13 @@ nav ul li a.active {
     }
 
     .cards {
-        display: block;
-        justify-content: space-between;
+        display: flex;
+        justify-content: center;
         align-items: center;
         width: 100%;
         padding: 0px 0px 0px 0px;
         margin: 70px 0px;
+
     }
 
     .card {
@@ -984,7 +1360,7 @@ nav ul li a.active {
 
     .card:hover {
         transition: .5s;
-        transform: scale(1.03);
+        transform: scale(1.0);
     }
 
     .card h1 {
@@ -1058,20 +1434,19 @@ nav ul li a.active {
         display: flex;
         font-family: 'Roboto Slab';
         text-align: center;
-        justify-content: space-between;
-        height: 130px;
-        flex-direction: column;
         justify-content: center;
+        height: 130px;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     .work-card1 {
         width: 250px;
         height: 320px;
-        margin: 10px 0px;
+        margin: 10px 10px;
         box-shadow: 2px 0px 20px 0px rgba(0, 0, 0, 0.199);
         position: relative;
-        top: 280px;
+        top: -100px;
     }
 
     .work-card1:hover {

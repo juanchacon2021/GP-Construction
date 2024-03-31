@@ -393,8 +393,53 @@ nav ul li a.active {
     height: 5em;
 }
 
-
 @media (max-width: 1393px) {
+    .cards {
+        flex-direction: none;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        padding: 50px 0px;
+    }
+    
+    .card {
+        padding: 0px 30px;
+        margin: 0px 0px 35px 0px;
+        box-shadow: 2px 0px 20px 0px rgba(0, 0, 0, 0.199);
+        width: 230px;
+        height: 280px;
+    }
+    
+    .card:hover {
+        transition: .5s;
+        transform: scale(1);
+    }
+    
+    .card h1 {
+        font-size: 1.3em;
+        text-align: center;
+    }
+    
+    .imagens {
+        display: flex;
+        justify-content: center;
+        padding: 30px 0px 10px 0px;
+    }
+    
+    .card img {
+        width: 3.5em;
+        height: 3.5em;
+    }
+
+    .card p {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 690px) {
 
         /*      NAV     */
         nav {

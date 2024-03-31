@@ -436,8 +436,31 @@ iframe {
     height: 100%;
 }
 
+@media (max-width:1393px) {
+    .services-cards {
+        width: 100%;
+        font-family: 'Roboto Slab';
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        }
+    
+        .card {
+        width: 260px;
+        height: 300px;
+        box-shadow: 2px 0px 20px 0px rgba(0, 0, 0, 0.199);
+        margin: 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+}
 
-@media (max-width:1393px){
+@media (max-width:690px){
     /*      NAV     */
     nav {
         background-color: #436980;
