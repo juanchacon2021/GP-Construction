@@ -854,11 +854,11 @@ nav ul li a.active {
     }
     
     .images img {
-        width: 8em;
-        height: 6em;
+        width: 9em;
+        height: 7em;
         object-fit: cover;
         padding: 0px 0px;
-        margin: 10px 10px;
+        margin: 10px 11px;
     }
     
     .prueba {
@@ -871,8 +871,8 @@ nav ul li a.active {
     }
     
     .prueba1 img {
-        width: 10em;
-        height: 10em;
+        width: 8em;
+        height: 8em;
         object-fit: cover;
     }
     
