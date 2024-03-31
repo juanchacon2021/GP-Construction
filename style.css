@@ -849,7 +849,7 @@ nav ul li a.active {
         justify-content: none;
         flex-wrap: wrap;
         width: 100%;
-        padding: 0px 20px;
+        padding: 0px 15px;
         margin: 0px 0px;
     }
     
@@ -858,7 +858,7 @@ nav ul li a.active {
         height: 7em;
         object-fit: cover;
         padding: 0px 0px;
-        margin: 10px 11px;
+        margin: 10px 10px;
     }
     
     .prueba {
