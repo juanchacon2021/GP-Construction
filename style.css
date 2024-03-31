@@ -849,16 +849,16 @@ nav ul li a.active {
         justify-content: none;
         flex-wrap: wrap;
         width: 100%;
-        padding: 0px 23px;
+        padding: 0px 35px;
         margin: 0px 0px;
     }
     
     .images img {
-        width: 10em;
-        height: 8em;
+        width: 8em;
+        height: 6em;
         object-fit: cover;
         padding: 0px 0px;
-        margin: 0px 0px;
+        margin: 10px 10px;
     }
     
     .prueba {
@@ -867,12 +867,12 @@ nav ul li a.active {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 50%;
+        height: 35%;
     }
     
     .prueba1 img {
-        width: 10em;
-        height: 10em;
+        width: 8em;
+        height: 8em;
         object-fit: cover;
     }
     
