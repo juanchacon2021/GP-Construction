@@ -6,6 +6,11 @@
     font-family: 'Meltow';
     src: url(assets/font/meltow.ttf);
 }
+@font-face {
+    font-family: 'Devant';
+    src: url(assets/font/devant.ttf);
+}
+
 
 *{
     padding: 0;
@@ -48,7 +53,7 @@ nav ul li a {
     font-size: 13px;
     padding: 12px 30px;
     border-radius: 3px;
-    font-family: 'Roboto Slab';
+    font-family: 'Devant';
     text-decoration: none;
 }
 
@@ -127,7 +132,7 @@ nav ul li a.active {
     position: relative;
     top: -350px;
     text-align: center;
-    font-family: 'Roboto Condensed';
+    font-family: 'Devant';
     color: white;
     overflow: hidden;
 }
@@ -254,7 +259,7 @@ nav ul li a.active {
 
 .img-text {
     width: 100%;
-    font-family: 'Roboto Slab';
+    font-family: 'Devant';
     padding: 70px 100px 0px 50px;
     text-align: center;
 }
@@ -293,7 +298,7 @@ nav ul li a.active {
 
 .call {
     width: 100%;
-    font-family: 'Roboto Slab';
+    font-family: 'Devant';
     padding: 10em 0em 10em 3.5em;
     display: flex;
 }
@@ -400,7 +405,7 @@ nav ul li a.active {
 /* TEXTO POR ENCIMA DEL VIDEO*/
 
 .work-text {
-    font-family: 'Roboto Slab';
+    font-family: 'Devant';
     text-align: center;
     position: relative;
     top: -400px;
@@ -422,7 +427,7 @@ nav ul li a.active {
 .work-cards {
     width: 100%;
     display: flex;
-    font-family: 'Roboto Slab';
+    font-family: 'Devant';
     text-align: center;
     justify-content: space-between;
     height: 130px;
@@ -472,7 +477,7 @@ nav ul li a.active {
 .jobs {
     width: 100%;
     padding-bottom: 50px;
-    font-family: 'Roboto Slab';
+    font-family: 'Devant';
     text-align: center;
 }
 
@@ -560,7 +565,7 @@ nav ul li a.active {
     align-items: center;
     transform: scale(0);
     transition: transform .3s ease-in-out;
-    font-family: 'Roboto Slab';
+    font-family: 'Devant';
 }
 
 .light-box img {
@@ -605,7 +610,7 @@ nav ul li a.active {
 
 .textfinal {
     padding: 50px 100px;
-    font-family: 'Roboto Slab';
+    font-family: 'Devant';
 }
 
 .textfinal h1 {
@@ -630,7 +635,7 @@ nav ul li a.active {
 }
 
 .parte1 p {
-    font-family: 'Roboto Slab';
+    font-family: 'Devant';
     padding: 20px 0px;
     font-weight: 700;
     color: #00111b;
@@ -667,7 +672,7 @@ nav ul li a.active {
 
 .parte2 {
     display: flex;
-    font-family: 'Roboto Slab';
+    font-family: 'Devant';
     width: 40%;
     padding: 50px 0px;
 }
@@ -687,7 +692,7 @@ nav ul li a.active {
 
 .copy {
     background-color: #436980;
-    font-family: 'Roboto Slab';
+    font-family: 'Devant';
     text-align: center;
     padding: 30px 0px;
     color: white;
@@ -702,7 +707,7 @@ nav ul li a.active {
 .about-text {
     width: 100%;
     padding: 0px 40px;
-    font-family: 'Roboto Slab';
+    font-family: 'Devant';
 }
 
 .about-parrafo {
@@ -710,14 +715,14 @@ nav ul li a.active {
 }
 
 .card h1 {
-    font-family: 'Roboto Slab';
+    font-family: 'Devant';
 }
 
 
 
 /*  RESPONSIVE  */
 
-@media (max-width: 1098px){
+@media (max-width: 1393px){
 
     /*      NAV     */
     nav {
