@@ -6,6 +6,10 @@
     font-family: 'Meltow';
     src: url(assets/font/meltow.ttf);
 }
+@font-face {
+    font-family: 'Vancouver';
+    src: url(assets/font/vancouver.ttf);
+}
 
 *{
     padding: 0;
@@ -77,7 +81,16 @@ nav ul li a.active {
     display: none;
 }
 
+.fondo {
+    width: 100%;
+    height: 0;
+    position: relative;
+    top: -493px;
+}
 
+.fondo img {
+    width: 100%;
+}
 
 
 
@@ -139,6 +152,7 @@ nav ul li a.active {
 .start-text #text2  {
     font-size: 60px;
     padding: 25px 0px;
+    font-family: 'Vancouver';
 }
 
 .start-text #text3  {
@@ -211,7 +225,16 @@ nav ul li a.active {
     }
 }
 
+.fondo {
+    width: 100%;
+    height: 0;
+    position: relative;
+    top: -493px;
+}
 
+.fondo img {
+    width: 100%;
+}
 
 
 
@@ -221,7 +244,7 @@ nav ul li a.active {
 
 .textfinal {
     padding: 50px 100px;
-    font-family: 'Roboto Slab';
+    font-family: 'Vancouver';
 }
 
 .textfinal h1 {
@@ -339,6 +362,7 @@ nav ul li a.active {
 
 .services-text h1 {
     font-size: 55px;
+    font-family: 'Vancouver';
 }
 
 .services-text p {
@@ -397,6 +421,7 @@ nav ul li a.active {
 }
 
 .additional-services h1 {
+    font-family: 'Vancouver';
     padding: 10px 0px;
     font-size: 50px;
 }
@@ -517,6 +542,7 @@ nav ul li a.active {
 }
 
 .attentive-text h1 {
+    font-family: 'Vancouver';
     font-size: 60px;
 }
 
@@ -538,6 +564,7 @@ nav ul li a.active {
 
 
 @media (max-width: 1393px) {
+
     #itemCarrousel-1{
         background: url(assets/img/carrusel4.webp);
         background-size: 100% 100%;
@@ -564,7 +591,6 @@ nav ul li a.active {
 
     .services-cards {
         width: 100%;
-        font-family: 'Roboto Slab';
         margin-bottom: 50px;
         display: flex;
         flex-direction: none;
@@ -574,7 +600,6 @@ nav ul li a.active {
     }
 
     .services-text {
-        font-family: 'Roboto Slab';
         text-align: center;
         padding-bottom: 60px;
     }
@@ -627,8 +652,27 @@ nav ul li a.active {
             /*      NAV     */
             nav {
                 background-color: #436980;
-                height: 300px;
+                height: 230px;
                 width: 100%;
+                overflow: hidden;
+            }
+        
+            .fondo {
+                width: 100%;
+                height: 0;
+                position: relative;
+                top: -160px;
+            }
+            
+            .fondo img {
+                width: 100%;
+            }
+        
+            .start-text {
+                position: relative;
+                top: -160px;
+                text-align: center;
+                color: white;
                 overflow: hidden;
             }
         
@@ -719,14 +763,6 @@ nav ul li a.active {
                 }
             }
             
-            .start-text {
-                position: relative;
-                top: -190px;
-                text-align: center;
-                font-family: 'Roboto Condensed';
-                color: white;
-                overflow: hidden;
-            }
             
             .start-text #text1  {
                 font-size: 15px;
@@ -814,7 +850,6 @@ nav ul li a.active {
     
         .textfinal {
             padding: 2px 30px 30px 30px;
-            font-family: 'Roboto Slab';
         }
     
         .textfinal h1 {
@@ -837,7 +872,6 @@ nav ul li a.active {
         }
     
         .parte1 p {
-            font-family: 'Roboto Slab';
             padding: 20px 0px;
             font-weight: 700;
             color: #00111b;
@@ -874,7 +908,6 @@ nav ul li a.active {
     
         .parte2 {
             display: flex;
-            font-family: 'Roboto Slab';
             width: 100%;
             padding: 40px 30px;
             flex-direction: column;
@@ -901,7 +934,6 @@ nav ul li a.active {
     
         .copy {
             background-color: #436980;
-            font-family: 'Roboto Slab';
             text-align: center;
             padding: 20px 0px;
             color: white;
@@ -913,7 +945,6 @@ nav ul li a.active {
 
     .services-cards {
         width: 100%;
-        font-family: 'Roboto Slab';
         margin-bottom: 50px;
         display: flex;
         flex-direction: column;
@@ -922,7 +953,6 @@ nav ul li a.active {
     }
 
     .services-text {
-        font-family: 'Roboto Slab';
         text-align: center;
         padding-bottom: 60px;
     }
@@ -976,7 +1006,6 @@ nav ul li a.active {
     .additional {
         width: 100%;
         display: block;
-        font-family: 'Roboto Slab';
     }
 
     .additional-services {
@@ -1095,7 +1124,6 @@ nav ul li a.active {
     /*      ATTENTIVE     */
 
     .attentive {
-        font-family: 'Roboto Slab';
         display: flex;
     }
 
@@ -1125,13 +1153,12 @@ nav ul li a.active {
         object-fit: cover;
     }
 
-
+    
 
 
     /*      ATTENTIVE     */
 
     .attentive {
-        font-family: 'Roboto Slab';
         display: block;
     }
 
@@ -1163,5 +1190,6 @@ nav ul li a.active {
         width: 300px;
         height: 250px;
         object-fit: cover;
-    }
+    }    
+
 }

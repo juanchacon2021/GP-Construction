@@ -6,6 +6,10 @@
     font-family: 'Meltow';
     src: url(assets/font/meltow.ttf);
 }
+@font-face {
+    font-family: 'Vancouver';
+    src: url(assets/font/vancouver.ttf);
+}
 
 *{
     padding: 0;
@@ -77,7 +81,16 @@ nav ul li a.active {
     display: none;
 }
 
+.fondo {
+    width: 100%;
+    height: 0;
+    position: relative;
+    top: -493px;
+}
 
+.fondo img {
+    width: 100%;
+}
 
 
 
@@ -139,6 +152,7 @@ nav ul li a.active {
 .start-text #text2  {
     font-size: 60px;
     padding: 25px 0px;
+    font-family: 'Vancouver';
 }
 
 .start-text #text3  {
@@ -211,7 +225,16 @@ nav ul li a.active {
     }
 }
 
+.fondo {
+    width: 100%;
+    height: 0;
+    position: relative;
+    top: -493px;
+}
 
+.fondo img {
+    width: 100%;
+}
 
 
 
@@ -221,7 +244,7 @@ nav ul li a.active {
 
 .textfinal {
     padding: 50px 100px;
-    font-family: 'Roboto Slab';
+    font-family: 'Vancouver';
 }
 
 .textfinal h1 {
@@ -348,6 +371,7 @@ nav ul li a.active {
 
 .card h1 {
     font-size: 20px;
+    font-family: 'Vancouver';
 }
 
 .card img{
@@ -385,6 +409,7 @@ nav ul li a.active {
 
 .form h1 {
     font-size: 40px;
+    font-family: 'Vancouver';
 }
 
 .form p {
@@ -439,7 +464,6 @@ iframe {
 @media (max-width:1393px) {
     .services-cards {
         width: 100%;
-        font-family: 'Roboto Slab';
         margin-bottom: 50px;
         display: flex;
         flex-direction: none;
@@ -464,8 +488,27 @@ iframe {
     /*      NAV     */
     nav {
         background-color: #436980;
-        height: 300px;
+        height: 200px;
         width: 100%;
+        overflow: hidden;
+    }
+
+    .fondo {
+        width: 100%;
+        height: 0;
+        position: relative;
+        top: -135px;
+    }
+    
+    .fondo img {
+        width: 100%;
+    }
+
+    .start-text {
+        position: relative;
+        top: -145px;
+        text-align: center;
+        color: white;
         overflow: hidden;
     }
 
@@ -556,14 +599,7 @@ iframe {
         }
     }
     
-    .start-text {
-        position: relative;
-        top: -190px;
-        text-align: center;
-        font-family: 'Roboto Condensed';
-        color: white;
-        overflow: hidden;
-    }
+
     
     .start-text #text1  {
         font-size: 15px;
@@ -651,7 +687,6 @@ iframe {
 
     .textfinal {
         padding: 2px 30px 30px 30px;
-        font-family: 'Roboto Slab';
     }
 
     .textfinal h1 {
@@ -674,7 +709,6 @@ iframe {
     }
 
     .parte1 p {
-        font-family: 'Roboto Slab';
         padding: 20px 0px;
         font-weight: 700;
         color: #00111b;
@@ -711,7 +745,6 @@ iframe {
 
     .parte2 {
         display: flex;
-        font-family: 'Roboto Slab';
         width: 100%;
         padding: 40px 30px;
         flex-direction: column;
@@ -738,7 +771,6 @@ iframe {
 
     .copy {
         background-color: #436980;
-        font-family: 'Roboto Slab';
         text-align: center;
         padding: 20px 0px;
         color: white;
@@ -750,7 +782,6 @@ iframe {
 
     .services-cards {
     width: 100%;
-    font-family: 'Roboto Slab';
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
@@ -759,7 +790,6 @@ iframe {
     }
 
     .services-text {
-    font-family: 'Roboto Slab';
     text-align: center;
     padding-bottom: 60px;
     }
@@ -813,7 +843,6 @@ iframe {
     .additional {
     width: 100%;
     display: block;
-    font-family: 'Roboto Slab';
     }
 
     .additional-services {
@@ -933,7 +962,6 @@ iframe {
     /*      ATTENTIVE     */
 
     .attentive {
-    font-family: 'Roboto Slab';
     display: flex;
     }
 
@@ -969,7 +997,6 @@ iframe {
     /*      ATTENTIVE     */
 
     .attentive {
-    font-family: 'Roboto Slab';
     display: block;
     }
 
@@ -1008,7 +1035,6 @@ iframe {
 
     .contact-cards {
         width: 100%;
-        font-family: 'Roboto Slab';
         display: flex;
         flex-direction: column;
         margin: 0px 0px;
@@ -1057,7 +1083,6 @@ iframe {
     .contact-message {
         width: 100%;
         display: block;
-        font-family: 'Roboto Slab';
     }
 
     .form {
@@ -1089,7 +1114,6 @@ iframe {
     }
 
     textarea {
-        font-family: 'Roboto Slab';
         padding: 10px 0px 10px 10px;
         margin: 0px 0px 0px 0px;
     }
@@ -1105,7 +1129,6 @@ iframe {
         color: white;
         border: 0;
         border-radius: 2px;
-        font-family: 'Roboto Slab';
     } 
 
     .button:hover {
@@ -1123,4 +1146,5 @@ iframe {
         height: 300px;
         padding: 30px 30px;
     }
+
 }
