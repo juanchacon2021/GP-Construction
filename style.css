@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @font-face {
     font-family: 'Meltow';
     src: url(assets/font/meltow.ttf);
@@ -100,14 +101,31 @@ nav ul li a.active {
 
 /*      START       */
 
+.prueba1 {
+    width: 100%;
+    height: 0;
+    position: relative;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 9.5rem;
+}
+
+.prueba1 img {
+    width: 17em;
+    height: 17em;
+    object-fit: cover;
+}
+
 .sliderr {
     width: 100%;
     overflow: hidden;
+    margin: 5rem 0rem 0rem 0rem;
 }
 
 .slider {
     width: 100%;
-    height: 450px;
 }
 
 .slide-track {
@@ -124,7 +142,8 @@ nav ul li a.active {
 }
 
 .slide img {
-    width: 70%;
+    padding: 0rem 3rem;
+    width: 100%;
     height: 300px;
     object-fit: cover;
 }
@@ -236,6 +255,7 @@ nav ul li a.active {
 
 .img-section {
     display: flex;
+    margin: 0rem 0rem 3rem 0rem;
 }
 
 .images {
@@ -263,22 +283,7 @@ nav ul li a.active {
     width: 100%;
 }
 
-.prueba {
-    width: 100%;
-    height: 0;
-    position: relative;
-    z-index: 99;
-    margin: 0px 0px 0px 0px;
-    display: flex;
-    justify-content: center;
-    top: 20px;
-}
 
-.prueba1 img {
-    width: 17em;
-    height: 17em;
-    object-fit: cover;
-}
 
 
 
@@ -293,12 +298,21 @@ nav ul li a.active {
     padding-bottom: 20px;
     font-weight: 900;
     font-family: 'Vancouver';
+    font-size: 50px;
 }
 
 .img-text h5 {
     padding-bottom: 20px;
     font-weight: 900;
     color: #436980;
+    font-family: 'Roboto Slab';
+    font-size: 20px;
+}
+
+.img-text p {
+    font-family: 'Roboto Slab';
+    font-size: 20px;
+    margin: 0rem 10rem;
 }
 
 .img-text a {
@@ -307,6 +321,8 @@ nav ul li a.active {
     background-color: #436980;
     border-radius: 5px;
     padding: 10px 10px;
+    font-family: 'Roboto Slab';
+    font-size: 20px
 }
 
 .img-text a:hover {
@@ -325,7 +341,7 @@ nav ul li a.active {
 .call {
     width: 100%;
     font-family: 'Roboto Slab';
-    padding: 10em 0em 10em 3.5em;
+    padding: 2em 0em 2em 3.5em;
     display: flex;
 }
 
@@ -370,11 +386,10 @@ nav ul li a.active {
     justify-content: space-between;
     align-items: center;
     width: 50%;
-    margin-right: 20px;
+    margin-right: 10rem;
 }
 
 .card {
-    padding: 10px 30px;
     box-shadow: 2px 0px 60px 0px rgba(0, 0, 0, 0.199);
     width: 300px;
     height: 200px;
@@ -388,7 +403,7 @@ nav ul li a.active {
 .card h1 {
     font-size: 1.5em;
     text-align: center;
-    font-family: 'Vancouver';
+    font-family: 'Raleway';
 }
 
 .imagens {
@@ -408,6 +423,43 @@ nav ul li a.active {
 }
 
 
+
+/*  SPECIAL */
+
+.special-services {
+    margin: 5rem 4rem 10rem 4rem;
+    text-align: center;
+}
+
+.special-services h1 {
+    font-size: 60px;
+    font-family: 'Vancouver';
+    margin: 0rem 0rem 3rem 0rem;
+    font-weight: 600;
+}
+
+.special-services p {
+    font-size: 30px;
+    font-family: 'Raleway';
+    margin: 1rem 0rem 5rem 0rem;
+}
+
+.special-services a {
+    font-family: 'Raleway';
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 30px;
+    background-color: #1a425a;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    margin: 0rem 4rem;
+}
+
+.special-services a:hover {
+    transition: .5s;
+    background-color: #00111b;
+}
 
 
 
@@ -644,6 +696,7 @@ nav ul li a.active {
 
 .textfinal h1 {
     font-weight: 900;
+    font-size: 3rem;
 }
 
 
