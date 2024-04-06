@@ -637,27 +637,6 @@ nav ul li a.active {
 
 @media (max-width: 1393px) {
 
-    #itemCarrousel-1{
-        background: url(assets/img/carrusel4.webp);
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        background-color: rgb(226, 50, 50);
-        object-fit: cover;
-    }
-    
-    #itemCarrousel-2{
-        background: url(assets/img/carrusel2.webp);
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-    }
-    
-    #itemCarrousel-3{
-        background: url(assets/img/carrusel3.webp);
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        background-position-y: -250px;
-    }
-
 
 
 
@@ -1173,24 +1152,44 @@ nav ul li a.active {
     }
 
     #itemCarrousel-1{
-        background: url(assets/img/carrusel4.webp);
         background-size: 40rem auto;
         background-repeat: no-repeat;
-        background-color: rgb(226, 50, 50);
         object-fit: cover;
     }
 
     #itemCarrousel-2{
-        background: url(assets/img/carrusel2.webp);
         background-size: 40rem auto;
         background-repeat: no-repeat;
     }
 
     #itemCarrousel-3{
-        background: url(assets/img/carrusel3.webp);
         background-size: 40rem auto;
         background-repeat: no-repeat;
-        background-position-y: -250px;
+    }
+
+    #itemCarrousel-4{
+        background-size: 40rem auto;
+        background-repeat: no-repeat;
+    }
+
+    #itemCarrousel-5{
+        background-size: 40rem auto;
+        background-repeat: no-repeat;
+    }
+
+    #itemCarrousel-6{
+        background-size: 40rem auto;
+        background-repeat: no-repeat;
+    }
+
+    #itemCarrousel-7{
+        background-size: 40rem auto;
+        background-repeat: no-repeat;
+    }
+
+    #itemCarrousel-8{
+        background-size: 40rem auto;
+        background-repeat: no-repeat;
     }
 
     .conteCarrouselController{
