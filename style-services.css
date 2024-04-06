@@ -137,9 +137,13 @@ nav ul li a.active {
     }
 }
 
+.redirection {
+    text-decoration: none;
+}
+
 .start-text {
     position: relative;
-    top: -350px;
+    top: -300px;
     text-align: center;
     font-family: 'Roboto Condensed';
     color: white;
@@ -151,7 +155,7 @@ nav ul li a.active {
 }
 
 .start-text #text2  {
-    font-size: 60px;
+    font-size: 80px;
     padding: 25px 0px;
     font-family: 'Vancouver';
 }
@@ -419,6 +423,7 @@ nav ul li a.active {
     width: 40%;
     padding: 4rem 0rem 4rem 6rem;
     background-color: black;
+    background: url(assets/img/fondo\ plano.png);
     color: white;
 }
 
@@ -517,6 +522,30 @@ nav ul li a.active {
 
 #itemCarrousel-4{
     background: url(assets/img/carrusel5.webp);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+#itemCarrousel-5{
+    background: url(assets/img/carrusel6.webp);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+#itemCarrousel-6{
+    background: url(assets/img/carrusel7.webp);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+#itemCarrousel-7{
+    background: url(assets/img/carrusel8.webp);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+#itemCarrousel-8{
+    background: url(assets/img/carrusel9.webp);
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
