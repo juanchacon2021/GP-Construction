@@ -103,6 +103,24 @@ nav ul li a.active {
 
 
 /*      START       */
+.slider-box{
+    width: 100%;
+    height: 80vh;
+    background-image: url(assets/img/fondo3.webp);
+    background-size:cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 2.5s;
+
+    animation-name: animate;
+    animation-direction:alternate;
+    animation-play-state: running;
+    animation-timing-function: ease-in;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite ;
+}
+
 .slider {
     width: 100%;
     height: auto;
@@ -533,9 +551,9 @@ iframe {
     ul {
         position: absolute;
         width: 100%;
-        height: 55vh;
+        height: 80vh;
         background: #032c46;
-        top: 80px;
+        top: 65px;
         left: -100%;
         text-align: center;
         transition: all .5s;
@@ -565,6 +583,24 @@ iframe {
 
 
     /*  START CARRUSEL   */
+    .slider-box{
+        width: 100%;
+        height: 35vh;
+        background-image: url(assets/img/fondo3.webp);
+        background-size:cover ;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 2.5s;
+    
+        animation-name: animate;
+        animation-direction:alternate;
+        animation-play-state: running;
+        animation-timing-function: ease-in;
+        animation-duration: 15s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite ;
+    }
+
 
     .slider {
         width: 100%;
@@ -606,8 +642,8 @@ iframe {
     }
     
     .start-text #text2  {
-        font-size: 30px;
-        padding: 25px 0px;
+        font-size: 50px;
+        padding: 70px 0px 0px 0px;
     }
     
     .start-text #text3  {
