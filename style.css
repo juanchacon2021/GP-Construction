@@ -111,7 +111,7 @@ nav ul li a.active {
 }
 @keyframes animate{
     25%{
-        background-image: url(assets/img/fondo2.webp);
+        background-image: url(assets/img/fondo77.webp);
     }
     50%{
         background-image: url(assets/img/fondo1.webp);
@@ -993,7 +993,7 @@ nav ul li a.active {
 
     .img-text {
         width: 100%;
-        padding: 70px 100px 0px 50px;
+        padding: 70px 60px 0px 60px;
         text-align: center;
     }
 

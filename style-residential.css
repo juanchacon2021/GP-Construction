@@ -380,232 +380,114 @@ nav ul li a.active {
 
 
 
-/*      PAGINA SERVICES        */
+/*      PAGINA RESIDENTIAL        */
 
-.services-cards {
-    width: 100%;
-    font-family: 'Roboto Slab';
+.start-residential {
+    padding: 15rem;
+    font-family: 'Raleway';
+}
+
+.start-residential p {
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
+    line-height: 45px;
+}
+
+.render {
     display: flex;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.services-text {
-    font-family: 'Roboto Slab';
-    text-align: center;
-    padding-bottom: 60px;
+.card img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    margin: 1rem 1rem;
 }
 
-.services-text h1 {
-    font-size: 55px;
-    font-family: 'Vancouver';
-}
-
-.services-text p {
-    font-size: 18px;
-    padding-top: 20px;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 260px;
-    height: 420px;
-    box-shadow: 2px 0px 20px 0px rgba(0, 0, 0, 0.199);
-    margin: 0px 40px;
-}
-
-.card:hover {
-    transition: .3s;
+.card img:hover {
+    transition: .5s;
     transform: scale(1.03);
 }
 
-.card img{
-    width: 260px;
-    height: 300px;
-    object-fit: cover;
-} 
 
-.card h1 {
-    font-size: 14px;
-    padding-top: 20px;
+
+.arquitectural {
+    background-color: #032c46;
+    padding: 10rem 7rem 10rem 7rem;
+    margin-top: 5rem;
 }
 
-.card p {
-    font-size: 12px;
-    padding: 20px;
-    text-align: justify;
-}
-
-
-
-/*      ADDITIONAL SERVICES     */
-
-.additional {
-    width: 100%;
-    display: flex;
-    font-family: 'Roboto Slab';
-}
-
-.additional-services {
-    width: 40%;
-    padding: 4rem 0rem 4rem 6rem;
-    background-color: black;
-    color: white;
-}
-
-.additional-services h1 {
+.arquitectural h1 {
     font-family: 'Vancouver';
-    padding: 10px 0px;
-    font-size: 70px;
-}
-
-.additional-services p {
-    margin: 20px 0px 50px;
-    font-family: 'Raleway';
-    width: 80%;
-    font-size: 20px;
-}
-
-.additional-services a {
     color: white;
-    background-color: #032438;
-    text-decoration: none;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.additional-services a:hover {
-    transition: .3s;
-    background-color: #00111b;
-}
-
-.additional-img {
-    width: 70%;
-    background-color: #436980;
-}
-/*  CARRUSEL    */
-
-.carrousel{
-    width: 70%;
-    margin: 5rem 0rem 5rem 10rem;
-    padding: 10px 30px;
-}
-
-.conteCarrousel{
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-}
-
-.itemCarrousel{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-}
-
-.itemCarrouselTarjeta{
-    width: 100%;
-    height: 100%;
-}
-
-.itemCarrouselArrows{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%; 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px; 
-}
-
-.itemCarrouselArrows > i:hover {
-    cursor: pointer;
-}
-
-#itemCarrousel-1{
-    background: url(assets/img/carrusel4.webp);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    object-fit: cover;
-}
-
-#itemCarrousel-2{
-    background: url(assets/img/carrusel2.webp);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-}
-
-#itemCarrousel-3{
-    background: url(assets/img/carrusel3.webp);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-}
-
-#itemCarrousel-4{
-    background: url(assets/img/carrusel5.webp);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-}
-
-.conteCarrouselController{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.conteCarrouselController > a{
-    text-decoration: none;
-    font-size: 2em;
-    color: grey;
-}
-
-.itemCarrouselArrows > a > i{
-    color: white;
-}
-
-/*      ATTENTIVE     */
-
-.attentive {
-    font-family: 'Roboto Slab';
-    display: flex;
-}
-
-.attentive-text {
-    width: 50%;
-    text-align: right;
-    padding: 30px 50px;
-}
-
-.attentive-text h1 {
-    font-family: 'Vancouver';
+    font-weight: 100;
     font-size: 80px;
 }
 
-.attentive-text p {
-    font-size: 25px;
-    padding: 50px 0px 50px 250px;
+.arquitectural-parf {
+    display: flex;
+    color: white;
     font-family: 'Raleway';
+    margin-top: 3rem;
+    line-height: 30px;
 }
 
-.attentive-img {
+.text1 {
+    font-size: 23px;
     width: 50%;
-    padding: 30px 50px;
+    margin-right: 7rem;
 }
 
-.attentive-img img {
-    width: 35rem;
-    height: 35rem;
-    object-fit: cover;
+.text2 {
+    font-size: 23px;
+    width: 50%;
+    margin-right: 5rem;
 }
+
+
+
+.remodeling {
+    display: flex;
+    padding: 2rem 4rem;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+}
+
+.images img {
+    width: 50rem;
+    height: 20rem;
+    object-fit: cover;
+    margin: 2rem 0rem;
+}
+
+.remo-text {
+    font-family: 'Raleway';
+    margin: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+    align-items: center;
+}
+
+.remo-text p {
+    font-size: 25px;
+    font-weight: 500;
+    width: 50%;
+    text-align: right;
+}
+
+
+
+
+
+
 
 
 @media (max-width: 1393px) {
@@ -658,38 +540,7 @@ nav ul li a.active {
         padding-top: 20px;
     }
 
-    .card {
-        width: 260px;
-        height: 420px;
-        box-shadow: 2px 0px 20px 0px rgba(0, 0, 0, 0.199);
-        margin: 20px 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 
-    .card:hover {
-        transition: .3s;
-        transform: scale(1.03);
-    }
-
-    .card img{
-        width: 260px;
-        height: 300px;
-        object-fit: cover;
-    } 
-
-    .card h1 {
-        font-size: 14px;
-        padding-top: 20px;
-    }
-
-    .card p {
-        font-size: 12px;
-        padding: 20px;
-        text-align: justify;
-    }
 }
 
 
@@ -774,28 +625,7 @@ nav ul li a.active {
         
         
             /*  START CARRUSEL   */
-        
-            .slider {
-                width: 100%;
-                height: auto;
-            }
-            
-            .slide-track {
-                display: flex;
-                animation: scroll 40s linear infinite;
-                width: calc(800px * 10);
-                -webkit-animation: scroll 40s linear infinite;
-            }
-            
-            .slider .slide {
-                width: 100%;
-            }
-            
-            .slide img {
-                width: 100%;
-                height: 200px;
-                object-fit: cover;
-            }
+
             
             @keyframes scroll {
                 0% {
@@ -1028,119 +858,7 @@ nav ul li a.active {
         padding-top: 20px;
     }
 
-    .card {
-        width: 260px;
-        height: 420px;
-        box-shadow: 2px 0px 20px 0px rgba(0, 0, 0, 0.199);
-        margin: 20px 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 
-    .card:hover {
-        transition: .3s;
-        transform: scale(1.03);
-    }
-
-    .card img{
-        width: 260px;
-        height: 300px;
-        object-fit: cover;
-    } 
-
-    .card h1 {
-        font-size: 14px;
-        padding-top: 20px;
-    }
-
-    .card p {
-        font-size: 12px;
-        padding: 20px;
-        text-align: justify;
-    }
-
-
-
-    /*      ADDITIONAL SERVICES     */
-
-    .additional {
-        width: 100%;
-        display: block;
-    }
-
-    .additional-services {
-        width: 100%;
-        padding: 10px 50px 80px 50px;
-        background-color: black;
-        color: white;
-    }
-
-    .additional-services h1 {
-        padding: 10px 0px;
-        font-size: 50px;
-    }
-
-    .additional-services p {
-        margin: 20px 0px 50px;
-    }
-
-    .additional-services a {
-        color: white;
-        background-color: #032438;
-        text-decoration: none;
-        padding: 20px;
-        border-radius: 10px;
-    }
-
-    .additional-services a:hover {
-        transition: .3s;
-        background-color: #00111b;
-    }
-
-    .additional-img {
-        width: 100%;
-    }
-    /*  CARRUSEL    */
-
-    .carrousel{
-        width: 100%;
-        margin: 0rem 0rem 0rem 0rem;
-        padding: 10px 30px;
-    }
-
-    .conteCarrousel{
-        width: 100%;
-        height: 400px;
-        overflow: hidden;
-    }
-
-    .itemCarrousel{
-        position: relative;
-        width: 100%;
-        height: 100%;
-        border-radius: 20px;
-    }
-
-    .itemCarrouselTarjeta{
-        width: 100%;
-        height: 100%;
-    }
-
-    .itemCarrouselArrows{
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%; 
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 20px; 
-    }
 
     .itemCarrouselArrows > i:hover {
         cursor: pointer;
@@ -1183,37 +901,6 @@ nav ul li a.active {
         color: white;
     }
 
-    /*      ATTENTIVE     */
-
-    .attentive {
-        display: flex;
-    }
-
-    .attentive-text {
-        width: 50%;
-        text-align: right;
-        padding: 30px 50px;
-    }
-
-    .attentive-text h1 {
-        font-size: 60px;
-    }
-
-    .attentive-text p {
-        font-size: 25px;
-        padding: 50px 0px 50px 250px;
-    }
-
-    .attentive-img {
-        width: 50%;
-        padding: 30px 50px;
-    }
-
-    .attentive-img img {
-        width: 35rem;
-        height: 35rem;
-        object-fit: cover;
-    }
 
     
 
@@ -1224,34 +911,6 @@ nav ul li a.active {
         display: block;
     }
 
-    .attentive-text {
-        width: 100%;
-        text-align: right;
-        padding: 30px 50px;
-    }
 
-    .attentive-text h1 {
-        font-size: 30px;
-    }
-
-    .attentive-text p {
-        font-size: 25px;
-        padding: 50px 0px 50px 0px;
-    }
-
-    .attentive-img {
-        width: 100%;
-        padding: 30px 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .attentive-img img {
-        width: 300px;
-        height: 250px;
-        object-fit: cover;
-    }    
 
 }
