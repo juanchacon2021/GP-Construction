@@ -23,6 +23,7 @@
     box-sizing: border-box;
 }
 
+
 nav {
     background-color: #436980;
     height: 575px;
@@ -902,7 +903,7 @@ nav ul li a.active {
 
 
     .start-text {
-        top: -100px;
+        top: -140px;
     }
     .start-text #text1  {
         font-size: 15px;

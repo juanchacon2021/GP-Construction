@@ -270,6 +270,8 @@ nav ul li a.active {
 
 .fondo img {
     width: 100%;
+    height: 28rem;
+    object-fit: cover;
 }
 
 
@@ -490,59 +492,6 @@ nav ul li a.active {
 
 
 
-@media (max-width: 1393px) {
-
-    #itemCarrousel-1{
-        background: url(assets/img/carrusel4.webp);
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        background-color: rgb(226, 50, 50);
-        object-fit: cover;
-    }
-    
-    #itemCarrousel-2{
-        background: url(assets/img/carrusel2.webp);
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-    }
-    
-    #itemCarrousel-3{
-        background: url(assets/img/carrusel3.webp);
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        background-position-y: -250px;
-    }
-
-
-
-
-    .services-cards {
-        width: 100%;
-        margin-bottom: 50px;
-        display: flex;
-        flex-direction: none;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .services-text {
-        text-align: center;
-        padding-bottom: 60px;
-    }
-
-    .services-text h1 {
-        font-size: 55px;
-    }
-
-    .services-text p {
-        font-size: 18px;
-        padding-top: 20px;
-    }
-
-
-}
-
 
 @media (max-width: 690px) {
             /*      NAV     */
@@ -555,18 +504,18 @@ nav ul li a.active {
         
             .fondo {
                 width: 100%;
-                height: 0;
                 position: relative;
                 top: -160px;
             }
             
             .fondo img {
                 width: 100%;
+                height: 22vh;
             }
         
             .start-text {
                 position: relative;
-                top: -160px;
+                top: -180px;
                 text-align: center;
                 color: white;
                 overflow: hidden;
@@ -833,84 +782,108 @@ nav ul li a.active {
         }
      
     
-    /*      PAGINA SERVICES        */
 
-    .services-cards {
-        width: 100%;
-        margin-bottom: 50px;
+
+
+
+
+    .start-residential {
+        padding: 0rem 1rem 1rem 1rem;
+    }
+    
+    .start-residential p {
+        font-weight: 500;
+        font-size: 12px;
+        text-align: center;
+        line-height: 20px;
+    }
+    
+
+
+    .render {
         display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card img {
+        width: 14rem;
+        height: 10rem;
+        object-fit: cover;
+        margin: 1rem 1rem;
+    }
+    
+    .card img:hover {
+        transition: .5s;
+        transform: scale(1);
+    }
+
+
+    .arquitectural {
+        background-color: #032c46;
+        padding: 2rem 2rem 2rem 2rem;
+        margin-top: 2rem;
+    }
+    
+    .arquitectural h1 {
+        font-family: 'Vancouver';
+        color: white;
+        font-weight: 100;
+        font-size: 40px;
+    }
+    
+    .arquitectural-parf {
+        display: block;
+        color: white;
+        font-family: 'Raleway';
+        margin-top: 3rem;
+        line-height: 30px;
+    }
+    
+    .text1 {
+        font-size: 15px;
+        width: 100%;
+        margin-right: 7rem;
+    }
+    
+    .text2 {
+        font-size: 15px;
+        width: 100%;
+        margin-right: 5rem;
+    }
+
+
+
+    .remodeling {
+        display: flex;
+        padding: 2rem 0rem;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
-    .services-text {
-        text-align: center;
-        padding-bottom: 60px;
-    }
-
-    .services-text h1 {
-        font-size: 55px;
-    }
-
-    .services-text p {
-        font-size: 18px;
-        padding-top: 20px;
-    }
-
-
-
-    .itemCarrouselArrows > i:hover {
-        cursor: pointer;
-    }
-
-    #itemCarrousel-1{
-        background: url(assets/img/carrusel4.webp);
-        background-size: 40rem auto;
-        background-repeat: no-repeat;
-        background-color: rgb(226, 50, 50);
-        object-fit: cover;
-    }
-
-    #itemCarrousel-2{
-        background: url(assets/img/carrusel2.webp);
-        background-size: 40rem auto;
-        background-repeat: no-repeat;
-    }
-
-    #itemCarrousel-3{
-        background: url(assets/img/carrusel3.webp);
-        background-size: 40rem auto;
-        background-repeat: no-repeat;
-        background-position-y: -250px;
-    }
-
-    .conteCarrouselController{
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .conteCarrouselController > a{
-        text-decoration: none;
-        font-size: 2em;
-        color: grey;
-    }
-
-    .itemCarrouselArrows > a > i{
-        color: white;
-    }
-
-
     
-
-
-    /*      ATTENTIVE     */
-
-    .attentive {
-        display: block;
+    .images img {
+        width: 18rem;
+        height: 12rem;
+        object-fit: cover;
+        margin: 1rem 0rem;
     }
-
-
-
+    
+    .remo-text {
+        font-family: 'Raleway';
+        margin: 2rem 2rem;
+        display: flex;
+        flex-direction: column;
+        line-height: 20px;
+        align-items: center;
+    }
+    
+    .remo-text p {
+        font-size: 12px;
+        font-weight: 500;
+        width: 100%;
+        text-align: center;
+    }
 }
