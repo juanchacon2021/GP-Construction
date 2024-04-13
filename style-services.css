@@ -103,38 +103,6 @@ nav ul li a.active {
 }
 
 
-.slider {
-    width: 100%;
-    height: auto;
-}
-
-.slide-track {
-    display: flex;
-    animation: scroll 40s linear infinite;
-    width: calc(1000px * 10);
-    -webkit-animation: scroll 40s linear infinite;
-}
-
-.slider .slide {
-    width: 100%;
-}
-
-.slide img {
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
-}
-
-@keyframes scroll {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-    70% {
-        -webkit-transform: translateX(calc(-800px * 2));
-        transform: translateX(calc(-800px * 2));
-    }
-}
 
 .redirection {
     text-decoration: none;
@@ -145,7 +113,7 @@ nav ul li a.active {
     top: -370px;
     text-align: center;
     font-family: 'Roboto Condensed';
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     overflow: hidden;
 }
 
@@ -419,27 +387,33 @@ nav ul li a.active {
 }
 
 .additional-services {
-    width: 40%;
+    width: 100%;
     padding: 4rem 0rem 4rem 6rem;
     background-color: black;
     background: url(assets/img/fondo\ plano.png);
     color: white;
+    display: flex;
 }
 
-.additional-services h1 {
+
+
+.services1 {
+    width: 30%;
+}
+
+.services1 h1 {
     font-family: 'Vancouver';
     padding: 10px 0px;
     font-size: 70px;
 }
 
-.additional-services p {
+.services1 p {
     margin: 20px 0px 50px;
     font-family: 'Raleway';
-    width: 80%;
     font-size: 20px;
 }
 
-.additional-services a {
+.services1 a {
     color: white;
     background-color: #032438;
     text-decoration: none;
@@ -447,16 +421,58 @@ nav ul li a.active {
     border-radius: 10px;
 }
 
-.additional-services a:hover {
+.services1 a:hover {
     transition: .3s;
     background-color: #00111b;
 }
 
-.additional-img {
-    width: 70%;
-    background-color: #436980;
+
+
+.services2 {
+    width: 60%;
+    overflow: hidden;
+    margin: 1rem 2rem 0rem 7rem;
 }
-/*  CARRUSEL    */
+
+.slider {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    width: calc(1000px * 10);
+    -webkit-animation: scroll 40s linear infinite;
+}
+
+.slider .slide {
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    70% {
+        -webkit-transform: translateX(calc(-800px * 2));
+        transform: translateX(calc(-800px * 2));
+    }
+}
+
+
+
+/*  CARRUSEL    
 
 .carrousel{
     width: 70%;
@@ -564,7 +580,7 @@ nav ul li a.active {
 .itemCarrouselArrows > a > i{
     color: white;
 }
-
+*/
 /*      ATTENTIVE     */
 
 .attentive {
