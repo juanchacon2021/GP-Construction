@@ -23,6 +23,13 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url(assets/img/background.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 100px;
+}
+
 
 nav {
     background-color: #436980;
@@ -179,8 +186,8 @@ nav ul li a.active {
         transform: translateX(0);
     }
     70% {
-        -webkit-transform: translateX(calc(-800px * 3));
-        transform: translateX(calc(-800px * 3));
+        -webkit-transform: translateX(calc(-800px * 2));
+        transform: translateX(calc(-800px * 2));
     }
 }
 
@@ -418,6 +425,7 @@ nav ul li a.active {
     box-shadow: 2px 0px 60px 0px rgba(0, 0, 0, 0.199);
     width: 300px;
     height: 200px;
+    background-color: white;
 }
 
 .card:hover {

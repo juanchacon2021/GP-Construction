@@ -16,6 +16,12 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    background-image: url(assets/img/background.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 100px;
+}
 
 nav {
     background-color: #436980;
