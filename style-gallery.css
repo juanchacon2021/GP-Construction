@@ -612,7 +612,7 @@ nav ul li a.active {
 
     .galeria {
         display: flex;
-        width: 95%;
+        width: 80%;
         margin: auto;
         grid-gap: 10px;
         padding: 40px 0;
@@ -655,7 +655,7 @@ nav ul li a.active {
     }
     
     .light-box img {
-        width: 45vh;
+        width: 40vh;
         max-height: auto;
         object-fit: cover;
     }
