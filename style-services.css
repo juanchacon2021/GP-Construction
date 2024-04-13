@@ -482,113 +482,7 @@ nav ul li a.active {
 
 /*  CARRUSEL    
 
-.carrousel{
-    width: 70%;
-    margin: 5rem 0rem 5rem 10rem;
-    padding: 10px 30px;
-}
 
-.conteCarrousel{
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-}
-
-.itemCarrousel{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-}
-
-.itemCarrouselTarjeta{
-    width: 100%;
-    height: 100%;
-}
-
-.itemCarrouselArrows{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%; 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px; 
-}
-
-.itemCarrouselArrows > i:hover {
-    cursor: pointer;
-}
-
-#itemCarrousel-1{
-    background: url(assets/img/carrusel4.webp);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    object-fit: cover;
-}
-
-#itemCarrousel-2{
-    background: url(assets/img/carrusel2.webp);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-}
-
-#itemCarrousel-3{
-    background: url(assets/img/carrusel3.webp);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-}
-
-#itemCarrousel-4{
-    background: url(assets/img/carrusel5.webp);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-}
-
-#itemCarrousel-5{
-    background: url(assets/img/carrusel6.webp);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-}
-
-#itemCarrousel-6{
-    background: url(assets/img/carrusel7.webp);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-}
-
-#itemCarrousel-7{
-    background: url(assets/img/carrusel8.webp);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-}
-
-#itemCarrousel-8{
-    background: url(assets/img/carrusel9.webp);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-}
-
-.conteCarrouselController{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.conteCarrouselController > a{
-    text-decoration: none;
-    font-size: 2em;
-    color: grey;
-}
-
-.itemCarrouselArrows > a > i{
-    color: white;
-}
-*/
 /*      ATTENTIVE     */
 
 .attentive {
@@ -770,47 +664,20 @@ nav ul li a.active {
         
             /*  START CARRUSEL   */
         
-            .slider {
-                width: 100%;
-                height: auto;
+
+            
+            .start-text {
+                position: relative;
+                top: -130px;
             }
-            
-            .slide-track {
-                display: flex;
-                animation: scroll 40s linear infinite;
-                width: calc(800px * 10);
-                -webkit-animation: scroll 40s linear infinite;
-            }
-            
-            .slider .slide {
-                width: 100%;
-            }
-            
-            .slide img {
-                width: 100%;
-                height: 200px;
-                object-fit: cover;
-            }
-            
-            @keyframes scroll {
-                0% {
-                    -webkit-transform: translateX(0);
-                    transform: translateX(0);
-                }
-                70% {
-                    -webkit-transform: translateX(calc(-800px * 5));
-                    transform: translateX(calc(-800px * 5));
-                }
-            }
-            
-            
+
             .start-text #text1  {
                 font-size: 15px;
             }
             
             .start-text #text2  {
                 font-size: 50px;
-                padding: 60px 0px 0px 0px;
+                padding: 0px 0px 0px 0px;
             }
             
             .start-text #text3  {
@@ -1069,18 +936,23 @@ nav ul li a.active {
         padding: 10px 50px 80px 50px;
         background-color: black;
         color: white;
+        display: block;
     }
 
-    .additional-services h1 {
+    .services1 {
+        width: 100%;
+    }
+
+    .services1 h1 {
         padding: 10px 0px;
         font-size: 50px;
     }
 
-    .additional-services p {
+    .services1 p {
         margin: 20px 0px 50px;
     }
 
-    .additional-services a {
+    .services1 a {
         color: white;
         background-color: #032438;
         text-decoration: none;
@@ -1088,7 +960,7 @@ nav ul li a.active {
         border-radius: 10px;
     }
 
-    .additional-services a:hover {
+    .services1 a:hover {
         transition: .3s;
         background-color: #00111b;
     }
@@ -1098,104 +970,49 @@ nav ul li a.active {
     }
     /*  CARRUSEL    */
 
-    .carrousel{
+    .services2 {
         width: 100%;
-        margin: 0rem 0rem 0rem 0rem;
-        padding: 10px 30px;
-    }
-
-    .conteCarrousel{
-        width: 100%;
-        height: 400px;
         overflow: hidden;
-    }
-
-    .itemCarrousel{
-        position: relative;
-        width: 100%;
-        height: 100%;
+        margin: 5rem 0rem 0rem 0rem;
         border-radius: 20px;
     }
-
-    .itemCarrouselTarjeta{
+    
+    .slider {
         width: 100%;
-        height: 100%;
-    }
-
-    .itemCarrouselArrows{
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%; 
+        height: auto;
         display: flex;
+        justify-content: center;
         align-items: center;
-        justify-content: space-between;
-        padding: 20px; 
     }
-
-    .itemCarrouselArrows > i:hover {
-        cursor: pointer;
+    
+    .slide-track {
+        display: flex;
+        animation: scroll 30s linear infinite;
+        width: calc(1000px * 10);
+        -webkit-animation: scroll 30s linear infinite;
     }
-
-    #itemCarrousel-1{
-        background-size: 40rem auto;
-        background-repeat: no-repeat;
+    
+    .slider .slide {
+        width: 100%;
+    }
+    
+    .slide img {
+        width: 100%;
+        height: 350px;
         object-fit: cover;
     }
-
-    #itemCarrousel-2{
-        background-size: 40rem auto;
-        background-repeat: no-repeat;
+    
+    @keyframes scroll {
+        0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+        70% {
+            -webkit-transform: translateX(calc(-800px * 2));
+            transform: translateX(calc(-800px * 2));
+        }
     }
 
-    #itemCarrousel-3{
-        background-size: 40rem auto;
-        background-repeat: no-repeat;
-    }
-
-    #itemCarrousel-4{
-        background-size: 40rem auto;
-        background-repeat: no-repeat;
-    }
-
-    #itemCarrousel-5{
-        background-size: 40rem auto;
-        background-repeat: no-repeat;
-    }
-
-    #itemCarrousel-6{
-        background-size: 40rem auto;
-        background-repeat: no-repeat;
-    }
-
-    #itemCarrousel-7{
-        background-size: 40rem auto;
-        background-repeat: no-repeat;
-    }
-
-    #itemCarrousel-8{
-        background-size: 40rem auto;
-        background-repeat: no-repeat;
-    }
-
-    .conteCarrouselController{
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .conteCarrouselController > a{
-        text-decoration: none;
-        font-size: 2em;
-        color: grey;
-    }
-
-    .itemCarrouselArrows > a > i{
-        color: white;
-    }
 
     /*      ATTENTIVE     */
 

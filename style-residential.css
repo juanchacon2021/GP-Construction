@@ -583,13 +583,13 @@ nav ul li a.active {
             }
         
             .enlace{
-                padding: 130px 10px;
+                padding: 94px 10px;
             }
         
             .logo {
                 height: 40px;
                 position: relative;
-                top: -110px;
+                top: -80px;
             }
         
             nav ul li a {
@@ -603,13 +603,13 @@ nav ul li a.active {
             ul {
                 position: absolute;
                 width: 100%;
-                height: 70vh;
+                height: 80vh;
                 background: #032c46;
                 top: 70px;
                 left: -100%;
                 text-align: center;
                 transition: all .5s;
-                z-index: 99;
+                z-index: 100;
             }
         
             nav ul li {
@@ -848,44 +848,13 @@ nav ul li a.active {
 
 
 
-    .start-residential {
-        padding: 0rem 1rem 1rem 1rem;
-    }
-    
-    .start-residential p {
-        font-weight: 500;
-        font-size: 12px;
-        text-align: center;
-        line-height: 20px;
-    }
-    
 
-
-    .render {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .card img {
-        width: 14rem;
-        height: 10rem;
-        object-fit: cover;
-        margin: 1rem 1rem;
-    }
-    
-    .card img:hover {
-        transition: .5s;
-        transform: scale(1);
-    }
 
 
     .arquitectural {
         background-color: #032c46;
-        padding: 2rem 2rem 2rem 2rem;
-        margin-top: 2rem;
+        padding: 0rem 2rem 2rem 2rem;
+        margin-top: 0rem;
     }
     
     .arquitectural h1 {
@@ -899,52 +868,115 @@ nav ul li a.active {
         display: block;
         color: white;
         font-family: 'Raleway';
-        margin-top: 3rem;
-        line-height: 30px;
+        margin-top: 0rem;
+        line-height: 20px;
     }
     
     .text1 {
-        font-size: 15px;
+        font-size: 23px;
         width: 100%;
         margin-right: 7rem;
+        padding: 3rem 0rem;
+    }
+    
+    .text1 p {
+        padding: 2rem 0rem;
+        font-size: 15px;
     }
     
     .text2 {
-        font-size: 15px;
         width: 100%;
-        margin-right: 5rem;
-    }
-
-
-
-    .remodeling {
         display: flex;
-        padding: 2rem 0rem;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     
-    .images img {
-        width: 18rem;
-        height: 12rem;
+    .text2 img{
+        width: 40rem;
+        height: 40rem;
         object-fit: cover;
-        margin: 1rem 0rem;
+        border-radius: 0px;
+    }
+
+    .sliderr {
+        width: 100%;
+        overflow: hidden;
+        margin: 0rem 0rem 0rem 0rem;
     }
     
-    .remo-text {
-        font-family: 'Raleway';
-        margin: 2rem 2rem;
+    .slider {
+        width: 100%;
+    }
+    
+    .slide-track {
         display: flex;
-        flex-direction: column;
-        line-height: 20px;
+        animation: scroll 40s linear infinite;
+        width: calc(1000px * 10);
+        -webkit-animation: scroll 40s linear infinite;
+        margin: 0px 0px 0px 0px;
         align-items: center;
     }
     
-    .remo-text p {
-        font-size: 12px;
-        font-weight: 500;
+    .slider .slide {
         width: 100%;
-        text-align: center;
     }
+    
+    .slide img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    @keyframes scroll {
+        0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+        70% {
+            -webkit-transform: translateX(calc(-800px * 3));
+            transform: translateX(calc(-800px * 3));
+        }
+    }
+
+
+
+
+
+    .remodeling {
+        display: block;
+        padding: 0rem 7rem 10rem 0rem;
+    }
+    
+    .remo-text {
+        padding: 3rem 0rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .remo-text h1 {
+        font-size: 50px;
+        font-family: 'Vancouver';
+        text-align: center;
+        width: 100%;
+    }
+    
+    .remo-text p {
+        font-size: 17px;
+        font-family: 'Raleway';
+        font-weight: 500;
+        padding: 2rem 0rem 0rem 2rem;
+        line-height: 20px;
+    }
+    
+    .remo-img {
+        padding: 3rem 7rem 0rem 2rem;
+    }
+    
+    .remo-img img {
+        width: 20rem;
+        height: 10rem;
+        object-fit: cover;
+        border-radius: 0px;
+    }
+    
 }

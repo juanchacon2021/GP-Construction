@@ -523,29 +523,30 @@ iframe {
         width: 100%;
         height: 0;
         position: relative;
-        top: -135px;
+        top: -130px;
     }
     
     .fondo img {
         width: 100%;
+        height: 150px;
     }
 
     .start-text {
         position: relative;
-        top: -145px;
+        top: -160px;
         text-align: center;
         color: white;
         overflow: hidden;
     }
 
     .enlace{
-        padding: 130px 10px;
+        padding: 80px 10px;
     }
 
     .logo {
         height: 40px;
         position: relative;
-        top: -110px;
+        top: -60px;
     }
 
     nav ul li a {
@@ -561,11 +562,11 @@ iframe {
         width: 100%;
         height: 80vh;
         background: #032c46;
-        top: 65px;
+        top: 70px;
         left: -100%;
         text-align: center;
         transition: all .5s;
-        z-index: 99;
+        z-index: 100;
     }
 
     nav ul li {
@@ -922,157 +923,8 @@ iframe {
     width: 100%;
     background-color: #e49502;
     }
-    /*  CARRUSEL    */
-
-    .carrousel{
-    width: 100%;
-    margin: 0rem 0rem 0rem 0rem;
-    padding: 10px 30px;
-    }
-
-    .conteCarrousel{
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-    }
-
-    .itemCarrousel{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    }
-
-    .itemCarrouselTarjeta{
-    width: 100%;
-    height: 100%;
-    }
-
-    .itemCarrouselArrows{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%; 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px; 
-    }
-
-    .itemCarrouselArrows > i:hover {
-    cursor: pointer;
-    }
-
-    #itemCarrousel-1{
-    background: url(assets/img/carrusel4.webp);
-    background-size: 40rem auto;
-    background-repeat: no-repeat;
-    background-color: rgb(226, 50, 50);
-    object-fit: cover;
-    }
-
-    #itemCarrousel-2{
-    background: url(assets/img/carrusel2.webp);
-    background-size: 40rem auto;
-    background-repeat: no-repeat;
-    }
-
-    #itemCarrousel-3{
-    background: url(assets/img/carrusel3.webp);
-    background-size: 40rem auto;
-    background-repeat: no-repeat;
-    background-position-y: -250px;
-    }
-
-    .conteCarrouselController{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    }
-
-    .conteCarrouselController > a{
-    text-decoration: none;
-    font-size: 2em;
-    color: grey;
-    }
-
-    .itemCarrouselArrows > a > i{
-    color: white;
-    }
-
-    /*      ATTENTIVE     */
-
-    .attentive {
-    display: flex;
-    }
-
-    .attentive-text {
-    width: 50%;
-    text-align: right;
-    padding: 30px 50px;
-    }
-
-    .attentive-text h1 {
-    font-size: 60px;
-    }
-
-    .attentive-text p {
-    font-size: 25px;
-    padding: 50px 0px 50px 250px;
-    }
-
-    .attentive-img {
-    width: 50%;
-    padding: 30px 50px;
-    }
-
-    .attentive-img img {
-    width: 35rem;
-    height: 35rem;
-    object-fit: cover;
-    }
 
 
-
-
-    /*      ATTENTIVE     */
-
-    .attentive {
-    display: block;
-    }
-
-    .attentive-text {
-    width: 100%;
-    text-align: right;
-    padding: 30px 50px;
-    }
-
-    .attentive-text h1 {
-    font-size: 30px;
-    }
-
-    .attentive-text p {
-    font-size: 25px;
-    padding: 50px 0px 50px 0px;
-    }
-
-    .attentive-img {
-    width: 100%;
-    padding: 30px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
-
-    .attentive-img img {
-    width: 300px;
-    height: 250px;
-    object-fit: cover;
-    }
 
 
     /*      PAGINA SERVICES        */

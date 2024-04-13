@@ -860,9 +860,11 @@ nav ul li a.active {
         }
 
 
-    .enlace{
-        padding: 130px 10px;
-    }
+        .enlace {
+            position: absolute;
+            padding: 265.5px 100px;
+            background-color: rgb(255, 255, 255);
+        }
 
     .logo {
         height: 40px;
