@@ -160,7 +160,9 @@ nav ul li a.active {
 .slider {
     width: 100%;
 }
-
+img{
+    object-fit: cover;
+}
 .slide-track {
     display: flex;
     animation: scroll 40s linear infinite;

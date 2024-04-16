@@ -41,7 +41,9 @@ nav {
     position: relative;
     top: -240px;
 }
-
+img{
+    object-fit: cover;
+}
 nav ul {
     float: right;
     margin-right: 8%;

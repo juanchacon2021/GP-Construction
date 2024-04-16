@@ -390,7 +390,9 @@ nav ul li a.active {
     line-height: 40px;
     border-radius: 50%;
 }
-
+img{
+    object-fit: cover;
+}
 .next {
     display: block;
     background-color: #032438;

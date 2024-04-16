@@ -30,7 +30,9 @@ nav {
     width: 100%;
     overflow: hidden;
 }
-
+img{
+    object-fit: cover;
+}
 .enlace {
     position: absolute;
     padding: 265.5px 100px;
