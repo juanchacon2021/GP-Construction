@@ -1107,6 +1107,7 @@ nav ul li a.active {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 0rem 2rem 0rem 0rem;
     }
     
     .text3 img{
@@ -1115,9 +1116,8 @@ nav ul li a.active {
         object-fit: cover;
     }
     
-
     .text3 .sliderr {
-        width: 100%;
+        width: 83%;
         overflow: hidden;
         margin: 2rem 2rem 0rem 2rem;
     }
@@ -1151,8 +1151,8 @@ nav ul li a.active {
             transform: translateX(0);
         }
         70% {
-            -webkit-transform: translateX(calc(-800px * 2));
-            transform: translateX(calc(-800px * 2));
+            -webkit-transform: translateX(calc(-400px * 2));
+            transform: translateX(calc(-400px * 2));
         }
     }
 
