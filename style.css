@@ -108,13 +108,13 @@ nav ul li a.active {
     background-size:cover ;
     background-position: center;
     background-repeat: no-repeat;
-    transition: 2.5s;
+    transition: 1s;
 
     animation-name: animate;
     animation-direction:alternate;
     animation-play-state: running;
     animation-timing-function: ease-in;
-    animation-duration: 50s;
+    animation-duration: 70s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite ;
 }
