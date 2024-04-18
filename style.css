@@ -114,22 +114,48 @@ nav ul li a.active {
     animation-direction:alternate;
     animation-play-state: running;
     animation-timing-function: ease-in;
-    animation-duration: 15s;
+    animation-duration: 50s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite ;
 }
 @keyframes animate{
-    25%{
+    8.3%{
+        background-image: url(assets/img/fondo11.webp);
+    }
+    16.6%{
+        background-image: url(assets/img/fondo22.webp);
+    }
+    24.9%{
+        background-image: url(assets/img/fondo33.webp);
+    }
+    33.2%{
+        background-image: url(assets/img/fondo44.webp);
+    
+    }
+    41.5%{
+        background-image: url(assets/img/fondo55.webp);
+    }
+    49.8%{
+        background-image: url(assets/img/fondo66.webp);
+    }
+    58.1%{
         background-image: url(assets/img/fondo77.webp);
     }
-    50%{
-        background-image: url(assets/img/fondo1.webp);
+    66.4%{
+        background-image: url(assets/img/fondo88.webp);
+    
     }
-    75%{
-        background-image: url(assets/img/fondo4.webp);
+    74.7%{
+        background-image: url(assets/img/fondo99.webp);
+    }
+    83%{
+        background-image: url(assets/img/fondo100.webp);
+    }
+   91.3%{
+        background-image: url(assets/img/fondo110.webp);
     }
     100%{
-        background-image: url(assets/img/fondo5.webp);
+        background-image: url(assets/img/fondo120.webp);
     
     }
 }
