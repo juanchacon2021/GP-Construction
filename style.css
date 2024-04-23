@@ -191,9 +191,9 @@ img{
 }
 .slide-track {
     display: flex;
-    animation: scroll 40s linear infinite;
+    animation: scroll 30s linear infinite;
     width: calc(1000px * 10);
-    -webkit-animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 30s linear infinite;
     margin: 0px 0px 0px 0px;
     align-items: center;
 }
@@ -204,7 +204,7 @@ img{
 
 .slide img {
     padding: 0rem 3rem;
-    width: 100%;
+    width: 600px;
     height: 300px;
     object-fit: cover;
 }
@@ -215,8 +215,8 @@ img{
         transform: translateX(0);
     }
     70% {
-        -webkit-transform: translateX(calc(-800px * 2));
-        transform: translateX(calc(-800px * 2));
+        -webkit-transform: translateX(calc(-800px * 6));
+        transform: translateX(calc(-800px * 6));
     }
 }
 
