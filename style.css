@@ -23,14 +23,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background-image: url(assets/img/background.webp);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: 100px;
-    scroll-snap-type: y mandatory;
-}
-
 
 nav {
     background-color: #436980;
@@ -101,6 +93,27 @@ nav ul li a.active {
 
 
 /*      START       */
+
+
+
+
+
+
+.header {
+    position: relative;
+    height: 0;
+    top: -480px;
+}
+
+.header video {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+
+
+
 .slider-box{
     width: 100%;
     height: 55vh;
