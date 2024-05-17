@@ -913,7 +913,7 @@ nav ul li a.active {
         }
         
         .light-box img {
-            width: 50vh;
+            width: 40vh;
             max-height: auto;
             object-fit: cover;
         }        
