@@ -995,7 +995,7 @@ img{
     }
 
     .prueba1 {
-        top: 70px;
+        top: 85px;
         z-index: 1;
     }
 
@@ -1021,7 +1021,7 @@ img{
     .slide img {
         padding: 0rem 1rem;
         width: 100%;
-        height: 130px;
+        height: 170px;
         object-fit: cover;
     }
 
