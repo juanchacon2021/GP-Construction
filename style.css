@@ -15,6 +15,10 @@
     font-family: 'Vancouver';
     src: url(assets/font/vancouver.ttf);
 }
+@font-face {
+    font-family: 'Eastman';
+    src: url(assets/font/eastmanmedium.otf);
+}
 
 
 *{
@@ -59,7 +63,7 @@ nav ul li a {
     font-size: 13px;
     padding: 12px 30px;
     border-radius: 3px;
-    font-family: 'Roboto Slab';
+    font-family: 'Eastman';
     text-decoration: none;
 }
 
@@ -515,7 +519,7 @@ img{
 
 .special-services p {
     font-size: 30px;
-    font-family: 'Raleway';
+    font-family: 'Eastman';
     margin: 1rem 0rem 5rem 0rem;
 }
 
@@ -1169,7 +1173,7 @@ img{
 
     .special-services p {
         font-size: 20px;
-        font-family: 'Raleway';
+        font-family: 'Eastman';
         margin: 1rem 0rem 5rem 0rem;
     }
 
