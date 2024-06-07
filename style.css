@@ -210,7 +210,7 @@ img{
     display: flex;
     animation: scroll 30s linear infinite;
     width: calc(1000px * 10);
-    -webkit-animation: scroll 30s linear infinite;
+    -webkit-animation: scroll 25s linear infinite;
     margin: 0px 0px 0px 0px;
     align-items: center;
 }
@@ -232,8 +232,8 @@ img{
         transform: translateX(0);
     }
     70% {
-        -webkit-transform: translateX(calc(-800px * 6));
-        transform: translateX(calc(-800px * 6));
+        -webkit-transform: translateX(calc(-800px * 4));
+        transform: translateX(calc(-800px * 4));
     }
 }
 
