@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
+    <link rel="preconnect" href="https://ka-f.fontawesome.com" crossorigin>
     <link rel="stylesheet" href="style-gallery.css">
-    <script src="https://kit.fontawesome.com/3cb14f89ed.js" crossorigin="anonymous"></script>
+    <script defer src="https://kit.fontawesome.com/3cb14f89ed.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="assets/img/icon/ico.png">
     <title>GP - Gallery</title>
+    <script defer src="sw-register.js"></script>
 </head>
 <body>
     <nav>
@@ -15,7 +21,10 @@
             <i class="fa-solid fa-bars"></i>
         </label>
         <a href="index.html" class="enlace">
-            <img src="assets/img/logo.png" alt="" class="logo">
+            <picture>
+                <source type="image/webp" srcset="assets/opt/img/logo.webp">
+                <img loading="eager" fetchpriority="high" decoding="async" src="assets/img/logo.png" alt="" class="logo">
+            </picture>
         </a>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -32,11 +41,14 @@
             <i class="fas fa-chevron-up"></i>
         </div>
     </div>
-    <script src="gotop.js"></script>
+    <script defer src="gotop.js"></script>
 
     <div class="fondo">
         <div class="imagen-fondo">
-            <img src="assets/img/header1.webp" alt="">
+            <picture>
+                <source type="image/webp" srcset="assets/opt/w/header1-640.webp 640w, assets/opt/w/header1-960.webp 960w" sizes="100vw">
+                <img loading="eager" fetchpriority="high" decoding="async" src="assets/img/header1.webp" alt="">
+            </picture>
         </div>
     </div>
 
@@ -206,19 +218,22 @@
 
     <div class="footer" id="contacto">
         <div class="parte1">
-            <img loading="lazy" src="assets/img/logoblanco.png" alt="" id="logo">
+            <picture>
+                <source type="image/webp" srcset="assets/opt/img/logoblanco.webp">
+                <img loading="lazy" decoding="async" src="assets/img/logoblanco.png" alt="" id="logo">
+            </picture>
             <p>
                 6516 Sunshine Valley Dr, Arlinton Texas 76016
             </p>
             <div class="redes">
                 <div class="redes1">
-                    <img loading="lazy" src="assets/img/icon/fb.png" alt="">
+                    <img loading="lazy" decoding="async" src="assets/opt/img/icon/fb.webp" alt="">
                 </div>
                 <div class="redes1">
-                    <img loading="lazy" src="assets/img/icon/ig.png" alt="">
+                    <img loading="lazy" decoding="async" src="assets/opt/img/icon/ig.webp" alt="">
                 </div>
                 <div class="redes1">
-                    <img loading="lazy" src="assets/img/icon/x.png" alt="">
+                    <img loading="lazy" decoding="async" src="assets/opt/img/icon/x.webp" alt="">
                 </div>
             </div>
         </div>

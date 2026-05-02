@@ -1,17 +1,29 @@
-window.onscroll = function(){
-    if(document.documentElement.scrollTop > 100){
-        document.querySelector('.go-top-container')
-        .classList.add('show');
-    }else{
-        document.querySelector('.go-top-container')
-        .classList.remove('show');
-    }
-}
+const goTopContainer = document.querySelector('.go-top-container');
 
-document.querySelector('.go-top-container')
-.addEventListener('click', () =>{
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
+if (goTopContainer) {
+    let ticking = false;
+
+    const updateVisibility = () => {
+        const shouldShow = document.documentElement.scrollTop > 100;
+        goTopContainer.classList.toggle('show', shouldShow);
+    };
+
+    const onScroll = () => {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(() => {
+            ticking = false;
+            updateVisibility();
+        });
+    };
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    updateVisibility();
+
+    goTopContainer.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     });
-});
+}

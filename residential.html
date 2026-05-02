@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"></noscript>
+    <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
+    <link rel="preconnect" href="https://ka-f.fontawesome.com" crossorigin>
     <link rel="stylesheet" href="style-residential.css">
-    <script src="https://kit.fontawesome.com/3cb14f89ed.js" crossorigin="anonymous"></script>
+    <script defer src="https://kit.fontawesome.com/3cb14f89ed.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="assets/img/icon/ico.png">
     <title>GP - Residential</title>
+    <script defer src="sw-register.js"></script>
 </head>
 <body>
         <!-- NAVBAR -->
@@ -17,7 +25,10 @@
                 <i class="fa-solid fa-bars"></i>
             </label>
             <a href="index.html" class="enlace">
-                <img loading="lazy" src="assets/img/logo.png" alt="" class="logo">
+                <picture>
+                    <source type="image/webp" srcset="assets/opt/img/logo.webp">
+                    <img loading="eager" fetchpriority="high" decoding="async" src="assets/img/logo.png" alt="" class="logo">
+                </picture>
             </a>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -34,13 +45,16 @@
                 <i class="fas fa-chevron-up"></i>
             </div>
         </div>
-        <script src="gotop.js"></script>
+        <script defer src="gotop.js"></script>
     
         <!--    START  --> 
         
         <div class="fondo">
             <div class="imagen-fondo">
-                <img loading="lazy" src="assets/img/header3.webp" alt="">
+                <picture>
+                    <source type="image/webp" srcset="assets/opt/w/header3-640.webp 640w, assets/opt/w/header3-960.webp 960w" sizes="100vw">
+                    <img loading="eager" fetchpriority="high" decoding="async" src="assets/img/header3.webp" alt="">
+                </picture>
             </div>
         </div>
 
@@ -122,32 +136,32 @@
 
                         <div class="slide">
                             <a href="galeria-render.html">
-                                <img src="assets/img/carrusel wood/wod1.webp" alt="">
+                                <img loading="lazy" decoding="async" src="assets/img/carrusel wood/wod1.webp" alt="">
                             </a>
                         </div>
                         <div class="slide">
                             <a href="galeria-render.html">
-                                <img src="assets/img/carrusel wood/wod2.webp" alt="">
+                                <img loading="lazy" decoding="async" src="assets/img/carrusel wood/wod2.webp" alt="">
                             </a>
                         </div>
                         <div class="slide">
                             <a href="galeria-render.html">
-                                <img src="assets/img/carrusel wood/wod3.webp" alt="">
+                                <img loading="lazy" decoding="async" src="assets/img/carrusel wood/wod3.webp" alt="">
                             </a>
                         </div>
                         <div class="slide">
                             <a href="galeria-render.html">
-                                <img src="assets/img/carrusel wood/wod4.webp" alt="">
+                                <img loading="lazy" decoding="async" src="assets/img/carrusel wood/wod4.webp" alt="">
                             </a>
                         </div>
                         <div class="slide">
                             <a href="galeria-render.html">
-                                <img src="assets/img/carrusel wood/wod5.webp" alt="">
+                                <img loading="lazy" decoding="async" src="assets/img/carrusel wood/wod5.webp" alt="">
                             </a>
                         </div>
                         <div class="slide">
                             <a href="galeria-render.html">
-                                <img src="assets/img/carrusel6.webp" alt="">
+                                <img loading="lazy" decoding="async" src="assets/img/carrusel6.webp" alt="">
                             </a>
                         </div>
                     </div>
@@ -177,32 +191,32 @@
 
                         <div class="slide">
                             <a href="galeria-plano.html">
-                                <img src="assets/img/plano/plano1.webp" alt="">
+                                <img loading="lazy" decoding="async" src="assets/img/plano/plano1.webp" alt="">
                             </a>
                         </div>
                         <div class="slide">
                             <a href="galeria-plano.html">
-                                <img src="assets/img/plano/plano2.webp" alt="">
+                                <img loading="lazy" decoding="async" src="assets/img/plano/plano2.webp" alt="">
                             </a>
                         </div>
                         <div class="slide">
                             <a href="galeria-plano.html">
-                                <img src="assets/img/plano/plano3.webp" alt="">
+                                <img loading="lazy" decoding="async" src="assets/img/plano/plano3.webp" alt="">
                             </a>
                         </div>
                         <div class="slide">
                             <a href="galeria-plano.html">
-                                <img src="assets/img/plano/plano4.webp" alt="">
+                                <img loading="lazy" decoding="async" src="assets/img/plano/plano4.webp" alt="">
                             </a>
                         </div>
                         <div class="slide">
                             <a href="galeria-plano.html">
-                                <img src="assets/img/plano/plano5.webp" alt="">
+                                <img loading="lazy" decoding="async" src="assets/img/plano/plano5.webp" alt="">
                             </a>
                         </div>
                         <div class="slide">
                             <a href="galeria-plano.html">
-                                <img src="assets/img/carrusel6.webp" alt="">
+                                <img loading="lazy" decoding="async" src="assets/img/carrusel6.webp" alt="">
                             </a>
                         </div>
                     </div>
@@ -224,21 +238,27 @@
 
     <div class="footer" id="contacto">
         <div class="parte1">
-            <img loading="lazy" src="assets/img/logoblanco.png" alt="" id="logo">
+            <picture>
+                <source type="image/webp" srcset="assets/opt/img/logoblanco.webp">
+                <img loading="lazy" decoding="async" src="assets/img/logoblanco.png" alt="" id="logo">
+            </picture>
             <p style="color: white; font-size: 1.5em; font-weight: 300; padding-left: 3rem;">in association with</p>
-            <img loading="lazy" src="assets/img/logo 2.png" alt="" id="logo">
+            <picture>
+                <source type="image/webp" srcset="assets/opt/img/logo%202.webp">
+                <img loading="lazy" decoding="async" src="assets/img/logo%202.png" alt="" id="logo">
+            </picture>
             <p>
                 6516 Sunshine Valley Dr, Arlinton Texas 76016
             </p>
             <div class="redes">
                 <div class="redes1">
-                    <img loading="lazy" src="assets/img/icon/fb.png" alt="">
+                    <img loading="lazy" decoding="async" src="assets/opt/img/icon/fb.webp" alt="">
                 </div>
                 <div class="redes1">
-                    <img loading="lazy" src="assets/img/icon/ig.png" alt="">
+                    <img loading="lazy" decoding="async" src="assets/opt/img/icon/ig.webp" alt="">
                 </div>
                 <div class="redes1">
-                    <img loading="lazy" src="assets/img/icon/x.png" alt="">
+                    <img loading="lazy" decoding="async" src="assets/opt/img/icon/x.webp" alt="">
                 </div>
             </div>
         </div>

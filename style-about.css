@@ -1,14 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 @font-face {
     font-family: 'Meltow';
     src: url(assets/font/meltow.ttf);
+    font-display: swap;
 }
 @font-face {
     font-family: 'Vancouver';
     src: url(assets/font/vancouver.ttf);
+    font-display: swap;
 }
 
 *{

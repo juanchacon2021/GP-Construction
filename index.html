@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"></noscript>
+    <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
+    <link rel="preconnect" href="https://ka-f.fontawesome.com" crossorigin>
+    <link rel="preload" as="image" href="assets/img/fondo3.webp" type="image/webp">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/3cb14f89ed.js" crossorigin="anonymous"></script>    <title>GP CONSTRUCTION</title>
+    <script defer src="https://kit.fontawesome.com/3cb14f89ed.js" crossorigin="anonymous"></script>
+    <title>GP CONSTRUCTION</title>
     <link rel="shortcut icon" href="assets/img/icon/ico.png">
+    <script defer src="sw-register.js"></script>
 </head>
 <body>
     <!-- NAVBAR -->
@@ -16,7 +26,10 @@
             <i class="fa-solid fa-bars"></i>
         </label>
         <a href="index.html" class="enlace">
-            <img loading="lazy" src="assets/img/logo.png" alt="" class="logo">
+            <picture>
+                <source type="image/webp" srcset="assets/opt/img/logo.webp">
+                <img loading="eager" fetchpriority="high" decoding="async" src="assets/img/logo.png" alt="" class="logo">
+            </picture>
         </a>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -34,7 +47,9 @@
             <i class="fas fa-chevron-up"></i>
         </div>
     </div>
-    <script src="gotop.js"></script>
+    <script defer src="gotop.js"></script>
+    <script defer src="hero-video.js"></script>
+    <script defer src="lazy-videos.js"></script>
 
     <!--    START  --> 
 <!--
@@ -45,7 +60,7 @@
 -->
 
     <div class="header">
-        <video autoplay loop muted src="assets/img/Secuencia.mp4"></video>
+        <video id="heroVideo" autoplay loop muted playsinline preload="none" poster="assets/img/fondo3.webp" data-src="assets/img/Secuencia.mp4"></video>
     </div>
 
     <div class="start-text">
@@ -62,38 +77,71 @@
 
     <div class="sliderr">
             <div class="prueba1">
-                <img loading="lazy" src="assets/img/prueba.png" alt="">
+                <picture>
+                    <source type="image/webp" srcset="assets/opt/img/prueba.webp">
+                    <img loading="eager" fetchpriority="low" decoding="async" src="assets/img/prueba.png" alt="">
+                </picture>
             </div>
         <div class="slide-track">
             <div class="slide">
-                <img loading="lazy" src="assets/img/rueda3.webp" alt="">
+                <picture>
+                    <source type="image/webp" srcset="assets/opt/w/rueda3-360.webp">
+                    <img loading="eager" fetchpriority="low" decoding="async" src="assets/img/rueda3.webp" alt="">
+                </picture>
             </div>
             <div class="slide">
-                <img loading="lazy" src="assets/img/rueda6.webp" alt="">
+                <picture>
+                    <source type="image/webp" srcset="assets/opt/w/rueda6-360.webp">
+                    <img loading="eager" fetchpriority="low" decoding="async" src="assets/img/rueda6.webp" alt="">
+                </picture>
             </div>
             <div class="slide">
-                <img loading="lazy" src="assets/img/rueda7.webp" alt="">
+                <picture>
+                    <source type="image/webp" srcset="assets/opt/w/rueda7-360.webp">
+                    <img loading="eager" fetchpriority="low" decoding="async" src="assets/img/rueda7.webp" alt="">
+                </picture>
             </div>
             <div class="slide">
-                <img loading="lazy" src="assets/img/rueda8.webp" alt="">
+                <picture>
+                    <source type="image/webp" srcset="assets/opt/w/rueda8-360.webp">
+                    <img loading="eager" fetchpriority="low" decoding="async" src="assets/img/rueda8.webp" alt="">
+                </picture>
             </div>
             <div class="slide">
-                <img loading="lazy" src="assets/img/rueda9.webp" alt="">
+                <picture>
+                    <source type="image/webp" srcset="assets/opt/w/rueda9-360.webp">
+                    <img loading="eager" fetchpriority="low" decoding="async" src="assets/img/rueda9.webp" alt="">
+                </picture>
             </div>
             <div class="slide">
-                <img loading="lazy" src="assets/img/rueda11.webp" alt="">
+                <picture>
+                    <source type="image/webp" srcset="assets/opt/w/rueda11-360.webp">
+                    <img loading="eager" fetchpriority="low" decoding="async" src="assets/img/rueda11.webp" alt="">
+                </picture>
             </div>
             <div class="slide">
-                <img loading="lazy" src="assets/img/rueda12.webp" alt="">
+                <picture>
+                    <source type="image/webp" srcset="assets/opt/w/rueda12-360.webp">
+                    <img loading="eager" fetchpriority="low" decoding="async" src="assets/img/rueda12.webp" alt="">
+                </picture>
             </div>
             <div class="slide">
-                <img loading="lazy" src="assets/img/rueda13.webp" alt="">
+                <picture>
+                    <source type="image/webp" srcset="assets/opt/w/rueda13-360.webp">
+                    <img loading="eager" fetchpriority="low" decoding="async" src="assets/img/rueda13.webp" alt="">
+                </picture>
             </div>
             <div class="slide">
-                <img loading="lazy" src="assets/img/rueda15.webp" alt="">
+                <picture>
+                    <source type="image/webp" srcset="assets/opt/w/rueda15-360.webp">
+                    <img loading="eager" fetchpriority="low" decoding="async" src="assets/img/rueda15.webp" alt="">
+                </picture>
             </div>
             <div class="slide">
-                <img loading="lazy" src="assets/img/rueda16.webp" alt="">
+                <picture>
+                    <source type="image/webp" srcset="assets/opt/w/rueda16-360.webp">
+                    <img loading="eager" fetchpriority="low" decoding="async" src="assets/img/rueda16.webp" alt="">
+                </picture>
             </div>
         </div>
     </div>
@@ -122,7 +170,7 @@
 
     <div class="work">
         <div class="work-img"> 
-            <video autoplay loop muted src="assets/img/LOGO GP1.mp4">
+            <video class="lazy-video" loop muted playsinline preload="none" data-src="assets/img/LOGO GP1.mp4">
                 Tu navegador no es compatible con videos HTML5
             </video>
         </div>
@@ -505,7 +553,7 @@
             <a href="about.html#aboutcard">
                 <div class="card">
                     <div class="imagens">
-                        <img src="assets/img/icon/vision.png" alt="">
+                        <img loading="lazy" decoding="async" src="assets/opt/img/icon/vision.webp" alt="">
                     </div>
                     <h1>Our Vision</h1>
                 </div>
@@ -513,7 +561,7 @@
             <a href="about.html#aboutcard">
                 <div class="card">
                     <div class="imagens">
-                        <img src="assets/img/icon/mision.png" alt="">
+                        <img loading="lazy" decoding="async" src="assets/opt/img/icon/mision.webp" alt="">
                     </div>
                     <h1>Our Mision</h1>
                 </div>
@@ -536,19 +584,22 @@
 
     <footer class="footer" id="contacto">
         <section class="parte1">
-            <img loading="lazy" src="assets/img/logoblanco.png" alt="" id="logo">
+            <picture>
+                <source type="image/webp" srcset="assets/opt/img/logoblanco.webp">
+                <img loading="lazy" decoding="async" src="assets/img/logoblanco.png" alt="" id="logo">
+            </picture>
             <p>
                 6516 Sunshine Valley Dr, Arlinton Texas 76016
             </p>
             <div class="redes">
                 <div class="redes1">
-                    <img loading="lazy" src="assets/img/icon/fb.png" alt="">
+                    <img loading="lazy" decoding="async" src="assets/opt/img/icon/fb.webp" alt="">
                 </div>
                 <div class="redes1">
-                    <img loading="lazy" src="assets/img/icon/ig.png" alt="">
+                    <img loading="lazy" decoding="async" src="assets/opt/img/icon/ig.webp" alt="">
                 </div>
                 <div class="redes1">
-                    <img loading="lazy" src="assets/img/icon/x.png" alt="">
+                    <img loading="lazy" decoding="async" src="assets/opt/img/icon/x.webp" alt="">
                 </div>
             </div>
         </section>
