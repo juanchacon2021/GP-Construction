@@ -15,6 +15,15 @@
     box-sizing: border-box;
 }
 
+/* Fallback de íconos (sin FontAwesome). */
+i.fa-solid.fa-arrow-left::before { content: "\2039"; }
+i.fa-solid.fa-arrow-right::before { content: "\203A"; }
+i.fa-solid.fa-arrow-left,
+i.fa-solid.fa-arrow-right {
+    font-style: normal;
+    font-weight: 700;
+}
+
 nav {
     background-color: #436980;
     height: 575px;
@@ -146,7 +155,8 @@ nav ul li a.active {
     transition: .2s;
 }
 
-.go-top-button i {
+.go-top-button i,
+.go-top-button svg {
     position: absolute;
     font-size: 1.7rem;
     top: 48%;
@@ -167,7 +177,8 @@ nav ul li a.active {
     z-index: 11;
 }
 
-.show i {
+.show i,
+.show svg {
     transform: translate(-50%, -50%) scale(1);
 }
 
@@ -512,7 +523,8 @@ nav ul li a.active {
         transition: .2s;
     }
 
-    .go-top-button i {
+    .go-top-button i,
+    .go-top-button svg {
         position: none;
         font-size: 0rem;
         top: 0%;

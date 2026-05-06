@@ -46,10 +46,59 @@
 		}
 	};
 
+	const setupAutoPause = () => {
+		if (video.dataset.autoPause === '1') return;
+		video.dataset.autoPause = '1';
+
+		const safePlay = () => {
+			// Evitar reintentos agresivos si el navegador bloquea autoplay.
+			try {
+				const p = video.play();
+				if (p && typeof p.catch === 'function') p.catch(() => {});
+			} catch {
+				// silencioso
+			}
+		};
+
+		const safePause = () => {
+			try {
+				video.pause();
+			} catch {
+				// silencioso
+			}
+		};
+
+		// Si la pestaña queda en background, pausar.
+		document.addEventListener('visibilitychange', () => {
+			if (document.hidden) safePause();
+			else safePlay();
+		});
+
+		// Pausar cuando el video no está en viewport.
+		if ('IntersectionObserver' in window) {
+			const io = new IntersectionObserver(
+				(entries) => {
+					for (const entry of entries) {
+						if (entry.isIntersecting) safePlay();
+						else safePause();
+					}
+				},
+				{ threshold: 0.15 }
+			);
+			io.observe(video);
+		}
+	};
+
 	// Dejar que el primer render ocurra y luego inicializar.
 	if ('requestIdleCallback' in window) {
-		window.requestIdleCallback(init, { timeout: 2500 });
+		window.requestIdleCallback(() => {
+			init();
+			setupAutoPause();
+		}, { timeout: 2500 });
 	} else {
-		window.setTimeout(init, 1200);
+		window.setTimeout(() => {
+			init();
+			setupAutoPause();
+		}, 1200);
 	}
 })();

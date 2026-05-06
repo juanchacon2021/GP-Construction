@@ -31,12 +31,53 @@
 		}
 	};
 
+	const setupAutoPause = (video) => {
+		if (video.dataset.autoPause === '1') return;
+		video.dataset.autoPause = '1';
+
+		const safePlay = () => {
+			try {
+				const p = video.play();
+				if (p && typeof p.catch === 'function') p.catch(() => {});
+			} catch {
+				// silencioso
+			}
+		};
+
+		const safePause = () => {
+			try {
+				video.pause();
+			} catch {
+				// silencioso
+			}
+		};
+
+		document.addEventListener('visibilitychange', () => {
+			if (document.hidden) safePause();
+			else safePlay();
+		});
+
+		if ('IntersectionObserver' in window) {
+			const io = new IntersectionObserver(
+				(entries) => {
+					for (const entry of entries) {
+						if (entry.isIntersecting) safePlay();
+						else safePause();
+					}
+				},
+				{ threshold: 0.15 }
+			);
+			io.observe(video);
+		}
+	};
+
 	if ('IntersectionObserver' in window) {
 		const io = new IntersectionObserver(
 			(entries) => {
 				for (const entry of entries) {
 					if (!entry.isIntersecting) continue;
 					initVideo(entry.target);
+					setupAutoPause(entry.target);
 					io.unobserve(entry.target);
 				}
 			},
@@ -47,7 +88,10 @@
 	} else {
 		// Fallback: inicializa luego de la carga.
 		window.addEventListener('load', () => {
-			for (const v of videos) initVideo(v);
+			for (const v of videos) {
+				initVideo(v);
+				setupAutoPause(v);
+			}
 		});
 	}
 })();

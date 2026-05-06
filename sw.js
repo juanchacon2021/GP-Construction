@@ -1,9 +1,12 @@
 /* Cache básico para acelerar cargas repetidas.
    Nota: requiere servir el sitio por http(s) o localhost. */
 
-const CACHE_VERSION = 'gp-construction-v2-2026-04-23';
+const CACHE_VERSION = 'gp-construction-v3-2026-05-06';
 const CORE_CACHE = `${CACHE_VERSION}-core`;
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
+
+const MAX_RUNTIME_ENTRIES = 120;
+const MAX_IMAGE_ENTRIES = 90;
 
 const CORE_ASSETS = [
 	'./',
@@ -25,6 +28,8 @@ const CORE_ASSETS = [
 	'./style-arqui.css',
 
 	'./gotop.js',
+	'./hero-video.js',
+	'./lazy-videos.js',
 	'./sw-register.js',
 
 	'./assets/img/logo.png',
@@ -50,6 +55,19 @@ const CORE_ASSETS = [
 	'./assets/font/vancouver.ttf',
 	'./assets/font/eastmanmedium.otf'
 ];
+
+async function trimCache(cacheName, maxEntries) {
+	try {
+		const cache = await caches.open(cacheName);
+		const keys = await cache.keys();
+		if (keys.length <= maxEntries) return;
+		// Borrar los más antiguos (orden de inserción).
+		const toDelete = keys.slice(0, keys.length - maxEntries);
+		await Promise.all(toDelete.map((req) => cache.delete(req)));
+	} catch {
+		// silencioso
+	}
+}
 
 self.addEventListener('install', (event) => {
 	event.waitUntil(
@@ -78,6 +96,7 @@ async function networkFirst(request) {
 	try {
 		const response = await fetch(request);
 		cache.put(request, response.clone());
+		trimCache(RUNTIME_CACHE, MAX_RUNTIME_ENTRIES);
 		return response;
 	} catch {
 		const cached = await cache.match(request);
@@ -91,6 +110,7 @@ async function cacheFirst(request) {
 	if (cached) return cached;
 	const response = await fetch(request);
 	cache.put(request, response.clone());
+	trimCache(RUNTIME_CACHE, MAX_RUNTIME_ENTRIES);
 	return response;
 }
 
@@ -100,6 +120,7 @@ async function staleWhileRevalidate(request) {
 	const fetchPromise = fetch(request)
 		.then((response) => {
 			cache.put(request, response.clone());
+			trimCache(RUNTIME_CACHE, MAX_RUNTIME_ENTRIES);
 			return response;
 		})
 		.catch(() => undefined);
@@ -127,7 +148,13 @@ self.addEventListener('fetch', (event) => {
 
 	// Imágenes: cache-first (gran impacto en galerías).
 	if (request.destination === 'image') {
-		event.respondWith(cacheFirst(request));
+		event.respondWith(
+			(async () => {
+				const res = await cacheFirst(request);
+				trimCache(RUNTIME_CACHE, MAX_IMAGE_ENTRIES);
+				return res;
+			})()
+		);
 		return;
 	}
 
