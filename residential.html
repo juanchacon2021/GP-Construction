@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"></noscript>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto+Condensed:wght@100..900&family=Raleway:wght@100..900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto+Condensed:wght@100..900&family=Raleway:wght@100..900&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto+Condensed:wght@100..900&family=Raleway:wght@100..900&display=swap"></noscript>
     <link rel="stylesheet" href="style-residential.css">
     <link rel="shortcut icon" href="assets/img/icon/ico.png">
     <title>GP - Residential</title>
-    <script defer src="sw-register.js"></script>
 </head>
 <body>
         <!-- NAVBAR -->
@@ -25,8 +24,8 @@
             </label>
             <a href="index.html" class="enlace">
                 <picture>
-                    <source type="image/webp" srcset="assets/opt/img/logo.webp">
-                    <img loading="eager" fetchpriority="high" decoding="async" src="assets/img/logo.png" alt="" class="logo">
+                    <source type="image/webp" srcset="assets/opt/w/logo-200.webp 200w, assets/opt/w/logo-400.webp 400w, assets/opt/w/logo-600.webp 600w" sizes="200px">
+                    <img loading="eager" fetchpriority="high" decoding="async" src="assets/opt/img/logo-400.png" width="200" height="40" alt="" class="logo">
                 </picture>
             </a>
             <ul>
@@ -46,7 +45,6 @@
                 </svg>
             </div>
         </div>
-        <script defer src="gotop.js"></script>
     
         <!--    START  --> 
         
@@ -295,6 +293,9 @@
     <div class="copy">
         <p>Copyright © 2024 GP Construction 2024 | Powered by GP Construction & Juan Chacón 2024</p>
     </div>
+
+    <script defer src="gotop.js"></script>
+    <script defer src="sw-register.js"></script>
 
 
 </body>
