@@ -1,7 +1,7 @@
 /* Cache básico para acelerar cargas repetidas.
    Nota: requiere servir el sitio por http(s) o localhost. */
 
-const CACHE_VERSION = 'gp-construction-v3-2026-05-06';
+const CACHE_VERSION = 'gp-construction-v4-2026-05-07';
 const CORE_CACHE = `${CACHE_VERSION}-core`;
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
 
@@ -32,15 +32,17 @@ const CORE_ASSETS = [
 	'./lazy-videos.js',
 	'./sw-register.js',
 
-	'./assets/img/logo.png',
 	'./assets/img/logoblanco.png',
 	'./assets/img/logonegro.png',
 	'./assets/img/icon/ico.png',
 
-	'./assets/opt/img/logo.webp',
+	'./assets/opt/img/logo-400.png',
 	'./assets/opt/img/logoblanco.webp',
 	'./assets/opt/img/logonegro.webp',
 	'./assets/opt/img/prueba.webp',
+	'./assets/opt/w/logo-200.webp',
+	'./assets/opt/w/logo-400.webp',
+	'./assets/opt/w/logo-600.webp',
 	'./assets/opt/img/icon/fb.webp',
 	'./assets/opt/img/icon/ig.webp',
 	'./assets/opt/img/icon/x.webp',
